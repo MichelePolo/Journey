@@ -12,13 +12,13 @@ quoteAuthor: "Bernardo di Chartres (attribuito anche a Isaac Newton)"
 
 Quando Bernardo di Chartres, nel XII secolo, pronunciò queste parole, esprimeva un principio fondamentale del progresso umano: **non partiamo mai da zero**. Ogni innovazione si costruisce su conoscenza precedente. Ogni scoperta poggia su fondamenta create da chi è venuto prima.
 
-Nel software, questo principio è amplificato. Non riscriviamo algoritmi di sorting. Non reimplementiamo HTTP. Non creiamo linguaggi da zero. **Riusiamo**, **componiam**, **orchestriamo**.
+Nel software, questo principio è amplificato. Non riscriviamo algoritmi di sorting. Non reimplementiamo HTTP. Non creiamo linguaggi da zero. **Riusiamo**, **componiamo**, **orchestriamo**.
 
 E l'**Agent Framework** di CodeIntel è esattamente questo: un pattern architetturale che permette di costruire agenti complessi **componendo** agenti più semplici, **orchestrando** capacità esistenti, **riusando** pattern consolidati.
 
 Non ho inventato nulla di rivoluzionario. Ho semplicemente applicato principi solidi:
-- **Separation of Concerns** (ogni agent ha responsabilità chiara)
-- **Composition over Inheritance** (comporre agents, non ereditare god objects)
+- **Separation of Concerns** (ogni agente ha una responsabilità chiara)
+- **Composition over Inheritance** (comporre agenti, non ereditare god objects)
 - **Dependency Injection** (iniettare servizi, non istanziare)
 - **Interface Segregation** (interfacce piccole, specifiche)
 
@@ -757,14 +757,12 @@ Come Bernardo di Chartres, sto sulle spalle di giganti.
 Ma il risultato è un'architettura che:
 - Ha permesso di costruire **6 agenti** in **5 sprint**
 - Mantiene **94% test coverage** grazie a testability
-- Scala a **nuovi agenti** senza riscrivere infrastruttura
+- Scala a **nuovi agenti** senza riscrivere l'infrastruttura
 - Isola **business logic** da **technical details**
 
 **Il framework non è il goal. È il mezzo.**
 
-Il goal è costruire software che duri, che scala, che si possa manutenere.
-
-E per quello, serve architettura solida.
+Il goal è costruire software che duri, che scala, che si possa manutenere. E per quello, serve architettura solida.
 
 Nel prossimo e ultimo post, esploreremo la documentazione come filosofia: come ho documentato 7,000+ righe di sprint retrospectives, testing reports, architecture decisions.
 

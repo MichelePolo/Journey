@@ -43,7 +43,7 @@ In CodeIntel, la documentazione non è un afterthought. È parte **integrante** 
 - [ ] **RETROSPECTIVE.md è aggiornata** ✅
 - [ ] **TESTING_REPORT.md ha risultati test** ✅
 
-Notate: **4 documenti obbligatori** per task. Non suggerimenti, **requisiti**.
+**4 documenti obbligatori** per task. Non suggerimenti, **requisiti**.
 
 ### Perché Questa Rigidità?
 
@@ -771,20 +771,19 @@ Restano da completare:
 E quando CodeIntel 1.0 sarà in produzione, ci sarà CodeIntel 2.0. E 3.0. Perché **il software, come la conoscenza, è un work in progress infinito**.
 
 Ma ora, con:
-- **8 sprint completati**
+- **9 sprint completati**
 - **753+ test** (94% coverage)
 - **6 agenti** funzionanti
 - **25,000 righe di documentazione**
 
 Ho la certezza che **le fondamenta sono solide**.
 
-E quando riprenderò questo progetto tra un mese, un anno, o dieci anni, la documentazione sarà lì, fedele testimone del percorso fatto, guida sicura per il percorso futuro.
-
-**Perché chi documenta, costruisce per l'eternità.**
+E quando riprenderò questo progetto tra un mese, un anno, o dieci anni, la documentazione sarà lì, fedele testimone del percorso fatto, guida sicura per il percorso futuro. Conto di finire in questo mese e allora probabilmente renderò pubblico il repository.
+Allora potremo parlare del codice che ho scritto/generato e la documentazione diventerà comunicazione e quindi di nuovo software.
 
 ---
 
-**Grazie per aver seguito questa serie. Che il vostro codice sia pulito, i vostri test verdi, e la vostra documentazione abbondante.**
+**Che il vostro codice sia pulito, i vostri test verdi, e la vostra documentazione abbondante.**
 
 ---
 
