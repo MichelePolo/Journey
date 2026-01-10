@@ -775,11 +775,11 @@ Nel prossimo e ultimo post, esploreremo la documentazione come filosofia: come h
 ---
 
 **Serie "CodeIntel System: Dal Concetto al Codice"**
-- Post 1: La Visione del Progetto
-- Post 2: SDLC e Metodologia Agile
-- Post 3: Analisi, Progettazione e Architettura
-- Post 4: L'IA come Co-Sviluppatore
-- Post 5: AST, Tree-sitter e Parsing del Codice
-- Post 6: CI/CD e Quality Gates
+- Post 1: [La Visione del Progetto](/Journey/posts/01-la-visione-del-progetto/)
+- Post 2: [SDLC e Metodologia Agile](/Journey/posts/02-sdlc-e-metodologia-agile/)
+- Post 3: [Analisi, Progettazione e Architettura](/Journey/posts/03-analisi-progettazione-architettura/)
+- Post 4: [L'IA come Co-Sviluppatore](/Journey/posts/04-ia-come-co-sviluppatore/)
+- Post 5: [AST, Tree-sitter e Parsing del Codice](/Journey/posts/05-ast-treesitter-parsing/)
+- Post 6: [CI/CD e Quality Gates](/Journey/posts/06-cicd-quality-gates/)
 - **Post 7**: Agent Framework e Orchestrazione ← *Sei qui*
-- Post 8: Documentazione come Filosofia
+- Post 8: [Documentazione come Filosofia](/Journey/posts/08-documentazione-come-filosofia/)
