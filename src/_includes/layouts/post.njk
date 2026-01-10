@@ -1,0 +1,26 @@
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+  <article>
+    <h1 style="margin-top: 0;">{{ title }}</h1>
+
+    <div class="post-meta">
+      {% if page.date %}
+        <time datetime="{{ page.date | htmlDateString }}">
+          {{ page.date | readableDate }}
+        </time>
+      {% endif %}
+    </div>
+
+    {% if quote %}
+      <blockquote>
+        <em>{{ quote }}</em><br/>
+        {% if quoteAuthor %}— {{ quoteAuthor }}{% endif %}
+      </blockquote>
+    {% endif %}
+
+    <hr>
+
+    {{ content | safe }}
+  </article>
+{% endblock %}

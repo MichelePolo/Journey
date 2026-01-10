@@ -1,0 +1,16 @@
+{
+  "name": "journey",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx @11ty/eleventy --serve --input=src --output=_site",
+    "build": "npx @11ty/eleventy --input=src --output=_site"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
+}
