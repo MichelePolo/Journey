@@ -68,7 +68,7 @@ Ho iniziato il progetto il **16 dicembre 2025** con uno Sprint 0 dedicato alla p
 
 Oggi, dopo **9 sprint completati**, il progetto ha:
 - **753+ test** con **94% di coverage**
-- **4 agenti produttivi** su 6 completamente funzionanti
+- **4 agenti generativi** su 6 completamente funzionanti
 - **Full CI/CD pipeline** con GitHub Actions
 - **7.000+ righe di documentazione**
 - **190+ story points completati** con velocity media di **23.75 points/sprint**
