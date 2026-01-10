@@ -9,7 +9,7 @@ permalink: "blog/"
 <ul class="post-list">
 {% for post in collections.post %}
   <li>
-    <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+    <h2><a href="{{ post.url | url }}">{{ post.data.title }}</a></h2>
     <div class="post-meta">
       {% if post.date %}
         <time datetime="{{ post.date | htmlDateString }}">

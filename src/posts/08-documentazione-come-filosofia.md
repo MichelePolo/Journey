@@ -745,14 +745,6 @@ Sprint 4: Dovevo configurare integration tests in CI (già fatto in Sprint 3).
 
 George Santayana aveva ragione: chi non conosce la storia è condannato a ripeterla.
 
-Ma c'è un corollario: **chi documenta la storia, libera il futuro.**
-
-Quando documento decisioni architetturali, non lo faccio per vanità. Lo faccio perché tra 6 mesi, quando dovrò modificare quel modulo, voglio sapere **perché** ho scelto quella soluzione.
-
-Quando documento le 8 iterazioni fallite su CI, non lo faccio per ammettere fallimenti. Lo faccio perché altri sviluppatori (o il futuro me) non debbano rifare gli stessi errori.
-
-Quando scrivo retrospettive di 500 righe, non lo faccio perché mi piace scrivere. Lo faccio perché **l'apprendimento senza documentazione è apprendimento perso**.
-
 **La documentazione è un atto di generosità.**
 
 È il regalo che fai al futuro te stesso. È il ponte che costruisci tra il presente e il domani. È la memoria collettiva che previene l'entropia della conoscenza.

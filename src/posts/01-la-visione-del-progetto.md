@@ -10,7 +10,7 @@ quoteAuthor: "Carlo Rovelli"
 
 ## Il Codice come Rete di Relazioni
 
-Quando Carlo Rovelli, nel suo meraviglioso viaggio attraverso la fisica quantistica, ci ricorda che il mondo è fatto di reti di baci e non di sassi, ci invita a spostare il nostro sguardo dall'oggetto alla relazione. E cosa sono, in fondo, i nostri codebase se non reti infinite di relazioni? Funzioni che si chiamano l'un l'altra, moduli che dipendono gli uni dagli altri, classi che collaborano per raggiungere obiettivi comuni. Il codice, proprio come il mondo descritto dalla fisica moderna, non è fatto di entità isolate, ma di connessioni, dipendenze, interazioni.
+Quando Carlo Rovelli, nel suo viaggio attraverso la fisica quantistica, ci ricorda che il mondo è fatto di reti di baci e non di sassi, ci invita a spostare il nostro sguardo dall'oggetto alla relazione. E cosa sono, in fondo, i nostri codebase se non reti infinite di relazioni? Funzioni che si chiamano l'un l'altra, moduli che dipendono gli uni dagli altri, classi che collaborano per raggiungere obiettivi comuni. Il codice, proprio come il mondo descritto dalla fisica moderna, non è fatto di entità isolate, ma di connessioni, dipendenze, interazioni.
 
 Eppure, troppo spesso, ci troviamo a guardare il codice come se fosse fatto di sassi: file isolati, funzioni incomprensibili, moduli scollegati. Quando ereditiamo un progetto legacy, quando ci troviamo di fronte a migliaia di righe di codice scritte da qualcun altro (o da noi stessi, mesi fa), la sfida non è comprendere il singolo file, ma la rete di relazioni che tiene insieme l'intero sistema.
 
@@ -91,8 +91,6 @@ Il vero obiettivo di CodeIntel non è solo "rendere più facile capire il codice
 **Voglio democratizzare l'accesso alla comprensione profonda del software.**
 
 Voglio che uno sviluppatore junior possa onboarding su un progetto complesso in giorni, non settimane. Voglio che un PM possa chiedere "quanto è accoppiato questo modulo?" e ricevere una risposta basata su metriche oggettive, non sensazioni. Voglio che un architetto possa visualizzare le dipendenze di un sistema di 200 moduli con un comando, non con giorni di reverse engineering manuale.
-
-Voglio che il codice torni a essere quello che dovrebbe essere: una **rete di baci**, non un mucchio di sassi.
 
 ## Il Futuro: Verso la Versione 1.0
 
