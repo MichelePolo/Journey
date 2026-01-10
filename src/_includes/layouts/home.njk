@@ -5,8 +5,9 @@
   <section style="margin-top: 0;">
     <ul class="post-list">
       {% for post in collections.post %}
+        {% set postNumber = post.fileSlug.split('-')[0] | int %}
         <li>
-          <h2><a href="{{ post.url | url }}">{{ post.data.title }}</a></h2>
+          <h2><a href="{{ post.url | url }}">{{ postNumber }}. {{ post.data.title }}</a></h2>
           <div class="post-meta">
             {% if post.date %}
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: text-bottom; margin-right: 0.3rem;">
