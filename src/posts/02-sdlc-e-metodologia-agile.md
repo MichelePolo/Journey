@@ -216,8 +216,6 @@ Adoro i numeri. Non perché siano fini a se stessi, ma perché **raccontano stor
 **Test totali**: 753+ (tutti passing)
 **Documentazione**: 7,000+ righe prodotte
 
-Ma il numero che mi rende più orgoglioso è un altro: **0 critical bugs in produzione**. Zero. Perché il processo funziona. Perché i quality gates funzionano. Perché il TDD funziona.
-
 ## Retrospettive: Imparare dai Successi e dai Fallimenti
 
 Una delle pratiche che amo di più è la **retrospettiva di sprint**. Non è una formalità, è uno **strumento di crescita**.
