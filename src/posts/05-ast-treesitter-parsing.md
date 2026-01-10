@@ -69,11 +69,11 @@ Con il testo, puoi cercare la stringa "calculateDiscount". Con l'AST, puoi:
 
 **AST non è solo parsing. È comprensione semantica.**
 
-E CodeIntel System è costruito su questa comprensione.
+CodeIntel System è costruito su questa comprensione.
 
 ## Il Problema: Parse Multi-Linguaggio
 
-CodeIntel supporta **7 linguaggi**: JavaScript, TypeScript, Python, Java, Go, Rust, C#.
+Supporta ad oggi **7 linguaggi**: JavaScript, TypeScript, Python, Java, Go, Rust, C#.
 
 Ogni linguaggio ha:
 - **Sintassi diversa**: `def` vs `func` vs `function`

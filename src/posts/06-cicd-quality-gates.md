@@ -45,7 +45,7 @@ All'inizio di CodeIntel, avevo un workflow manuale:
 ```
 
 **Risultato**:
-- Sprint 2: Commit con 69 ESLint errors che faillavano CI
+- Sprint 2: Commit con 69 ESLint errors che fallivano in CI
 - Sprint 3: Commit con 200+ TypeScript errors non catchati localmente
 - Sprint 4: Branch divergenti perché dimenticavo push
 
