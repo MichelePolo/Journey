@@ -620,7 +620,7 @@ Perché ora:
 
 L'architettura non è overhead. È **investimento**. È quella "sapiente, rigorosa e magnifica combinazione" che rende il software un'opera d'arte, non solo un mucchio di codice funzionante.
 
-Nel prossimo post esploreremo come l'Intelligenza Artificiale è integrata in CodeIntel sia come strumento di sviluppo (Claude Code) che come capability del sistema stesso (RAG, LLM, embeddings).
+Nel prossimo post esploreremo come l'Intelligenza Artificiale è integrata in CodeIntel sia come strumento di sviluppo (Claude Code, Gemini, Perplexity) che come capability del sistema stesso (RAG, LLM, embeddings).
 
 ---
 

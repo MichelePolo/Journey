@@ -82,7 +82,7 @@ Perché il push è obbligatorio? Tre ragioni:
 
 1. **Backup immediato**: Il lavoro è al sicuro, non solo sul laptop
 2. **Portabilità**: Posso riprendere da qualsiasi macchina/agente
-3. **Trasparenza**: Il team (anche se sono solo io + Claude Code!) sa sempre lo stato attuale
+3. **Trasparenza**: Il team (anche se sono solo io) sa sempre lo stato attuale
 
 **Git status deve sempre essere clean.** Se ci sono modifiche non committate, il task non è completato.
 
@@ -106,7 +106,7 @@ Ho implementato **pre-commit hooks** (Husky + lint-staged) che bloccano i commit
 
 **"Chiedi conferma prima di iniziare ogni nuovo task."**
 
-Questo principio è specifico per il contesto di sviluppo assistito da AI (Claude Code), ma è applicabile anche a team umani.
+Questo principio è specifico per il contesto di sviluppo assistito da AI (Claude Code, Gemini, Perplexity), ma è applicabile anche a team umani.
 
 Prima di iniziare un nuovo task:
 1. Presento il piano di implementazione
@@ -184,8 +184,7 @@ feat(agents): implement CodebaseIndexAgent with semantic chunking
 - Full RAG pipeline integration
 - 35/35 tests passing, 100% chunker coverage
 
-🤖 Generated with Claude Code
-Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>
+🤖 Generated with IA
 ```
 
 Messaggi chiari, descrittivi, tracciabili. Se tra un anno devo capire quando ho implementato il chunking semantico, trovo immediatamente questo commit.

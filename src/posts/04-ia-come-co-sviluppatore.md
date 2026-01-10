@@ -12,17 +12,17 @@ quoteAuthor: "Marco Aurelio"
 
 Marco Aurelio, nel secondo secolo dopo Cristo, aveva già compreso una verità profonda sull'esistenza umana: siamo creature fatte per la **collaborazione**. I piedi, le mani, i denti lavorano in armonia perfetta, ognuno con il suo ruolo specifico, ognuno indispensabile all'altro.
 
-Questa immagine mi è tornata in mente mille volte durante lo sviluppo di CodeIntel System, mentre collaboravo con **Claude Code** - un assistente AI per lo sviluppo software. Non come sostituto, ma come **partner**. Non come automa che esegue ordini, ma come **collaboratore** con competenze complementari alle mie.
+Mentre collaboravo con un assistente AI per lo sviluppo software. Non come sostituto, ma come **partner**. Non come automa che esegue ordini, ma come **collaboratore** con competenze complementari alle mie.
 
 Perché la vera rivoluzione dell'AI nello sviluppo software non sta nel sostituire il programmatore, ma nell'**amplificarne** le capacità. Come i piedi e le mani, come le due file di denti, uomo e AI possono lavorare in simbiosi, ognuno contribuendo con i propri punti di forza.
 
 Questo post esplora due dimensioni di questa partnership:
-1. Come ho usato l'AI (Claude Code) **per sviluppare** CodeIntel stesso
+1. Come ho usato l'AI **per sviluppare** CodeIntel stesso
 2. Come CodeIntel **integra l'AI** come capability fondamentale del sistema
 
 Due facce della stessa medaglia: l'intelligenza artificiale al servizio della comprensione del codice.
 
-## Parte I: Claude Code come Co-Sviluppatore
+## Parte I: Claude Code, Gemini, Perplexity come Co-Sviluppatore
 
 ### Il Contesto: Sviluppare Software con un Assistente AI
 
@@ -41,7 +41,7 @@ Volevo capire:
 
 **Spoiler**: I risultati mi hanno sorpreso, in positivo e in negativo.
 
-### Cosa Claude Code Fa Benissimo
+### Cosa Fanno Benissimo
 
 #### 1. Boilerplate e Scaffolding
 
@@ -211,7 +211,7 @@ the foundation for Phase 2 agent implementation.
 - **L'intervento umano** è stato critico per l'insight finale (authentication)
 - **Documentare ogni iterazione** crea knowledge base prezioso
 
-### Cosa Claude Code NON Fa Bene
+### Cosa NON Fanno Bene
 
 Essere onesti è importante. Claude Code ha limiti:
 
@@ -219,7 +219,7 @@ Essere onesti è importante. Claude Code ha limiti:
 
 **Domanda**: "Dovrei usare multi-tenant vector collections o database separati?"
 
-**Claude**: Fornisce pro/con generici, ma non può decidere senza contesto business profondo.
+**Claude**: Fornisce pro/cons generici, ma non può decidere senza contesto business profondo.
 
 **Decisione finale**: Sempre umana. Claude è consulente, non decision-maker.
 
@@ -227,7 +227,7 @@ Essere onesti è importante. Claude Code ha limiti:
 
 **Domanda**: "Implemento caching Redis o accetto latenza maggiore per semplicità?"
 
-**Claude**: Analizza opzioni, ma trade-off dipendono da:
+**Claude**: Analizza le opzioni, ma i trade-off dipendono da:
 - Budget infrastrutturale
 - Scala utenti prevista
 - Team maintenance capacity
@@ -243,7 +243,7 @@ Claude può rilevare code smell ovvi (funzioni troppo lunghe, duplicazione), ma 
 
 #### 4. Creatività Disruptive
 
-Claude è **eccellente** nell'applicare pattern noti, **mediocre** nell'inventarne di nuovi.
+L'IA è **eccellente** nell'applicare pattern noti, **mediocre** nell'inventarne di nuovi.
 
 Per innovazione architetturale, serve pensiero umano.
 
@@ -251,7 +251,7 @@ Per innovazione architetturale, serve pensiero umano.
 
 Dopo 8 sprint con Claude Code, ho identificato una divisione ottimale:
 
-| Attività | Claude Code | Umano | Collaborazione |
+| Attività | AI | Umano | Collaborazione |
 |----------|-------------|-------|----------------|
 | Architettura high-level | ❌ | ✅ | ❌ |
 | Design pattern selection | ⚠️ | ✅ | ✅ |
@@ -265,7 +265,7 @@ Dopo 8 sprint con Claude Code, ho identificato una divisione ottimale:
 
 **Leggenda**: ✅ Forte, ⚠️ Medio, ❌ Debole
 
-**Pattern emergente**: Claude eccelle in compiti **strutturati**, umano eccelle in compiti **creativi/strategici**, **collaborazione** massimizza risultato.
+**Pattern emergente**: L'AI eccelle in compiti **strutturati**, l'umano eccelle in compiti **creativi/strategici**, **collaborazione** massimizza risultato.
 
 ## Parte II: L'AI nel Sistema CodeIntel
 
@@ -539,7 +539,7 @@ IMPORTANT:
 
 ### Multi-Agent Orchestration con AI
 
-Pattern avanzato: **Agents che collaborano**, come umano + Claude Code.
+Pattern avanzato: **Agents che collaborano**.
 
 **Esempio: ArchitectureAnalysisAgent**:
 
@@ -577,7 +577,7 @@ export class ArchitectureAnalysisAgent extends BaseAgent {
 
 ## Conclusione: Simbiosi, Non Sostituzione
 
-Dopo 8 sprint sviluppando con Claude Code e costruendo un sistema AI-powered, la mia conclusione è chiara:
+Dopo 8 sprint sviluppando con gli agenti e costruendo un sistema AI-powered, la mia conclusione è chiara:
 
 **L'AI non sostituisce lo sviluppatore. Lo amplifica.**
 
