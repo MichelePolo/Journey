@@ -20,7 +20,7 @@ Saint-Exupéry, parlando di aviazione e design, ci ha lasciato una verità unive
 
 ## Il Problema: L'Illusione del "Cowboy Coding"
 
-All'inizio della mia carriera, credevo che i processi formali fossero nemici della produttività. *"Sono burocratici"*, pensavo. *"Rallentano lo sviluppo"*. Preferivo il "cowboy coding": scrivo codice velocemente, vedo cosa succede, iterro.
+All'inizio della mia carriera, credevo che i processi formali fossero nemici della produttività. *"Sono burocratici"*, pensavo. *"Rallentano lo sviluppo"*. Preferivo il "cowboy coding": scrivo codice velocemente, vedo cosa succede, itero.
 
 Poi ho lavorato su progetti reali. Ho visto codebase di 100.000 righe senza test. Ho debuggato per giorni bug introdotti da modifiche "rapide". Ho ereditato progetti dove nessuno sapeva più perché certe decisioni erano state prese. Ho visto team bloccarsi perché mancava coordinamento.
 
