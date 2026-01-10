@@ -77,7 +77,7 @@ Ma quello che mi rende più orgoglioso non sono i numeri. È la qualità del lav
 
 ## La Filosofia: Software come Artigianato
 
-C'è un passo che amo, di Marco Aurelio, che dice: *"Noi siamo nati per darci aiuto come i piedi, le mani, come le due file di denti."* Questo per me riassume perfettamente cosa dovrebbe essere lo sviluppo software: **collaborazione**, **supporto reciproco**, **sinergia**.
+C'è un passo di Marco Aurelio che dice: *"Noi siamo nati per darci aiuto come i piedi, le mani, come le due file di denti."* Questo per me riassume perfettamente cosa dovrebbe essere lo sviluppo software: **collaborazione**, **supporto reciproco**, **sinergia**.
 
 CodeIntel è progettato con questa filosofia:
 - **Collaborazione Uomo-IA**: L'AI non sostituisce lo sviluppatore, lo **potenzia**. L'ho usato io stesso per sviluppare parte di questo progetto (grazie Claude Code!), ma le decisioni architetturali, la visione, la qualità finale sono sempre frutto di **giudizio umano**.
@@ -95,7 +95,7 @@ Voglio che uno sviluppatore junior possa onboarding su un progetto complesso in 
 ## Il Futuro: Verso la Versione 1.0
 
 Il viaggio non è finito. Anzi, in un certo senso è appena iniziato. Restano da completare:
-- **Sprint 9-10**: RefactoringAgent e miglioramenti UX (CLI interattiva, API polish)
+- **Sprint 10**: Miglioramenti UX (CLI interattiva, API polish)
 - **Sprint 11-12**: Ottimizzazioni performance, plugin system, monitoring
 - **Sprint 13**: Testing end-to-end e quality assurance completa
 - **Sprint 14**: Release produzione, versione 1.0.0
@@ -108,7 +108,7 @@ Questo post è il primo di una serie di otto in cui condividerò il viaggio tecn
 
 Ma soprattutto, parleremo di **passione per il software ben fatto**.
 
-Perché il codice, alla fine, non è solo logica e algoritmi. È comunicazione. È collaborazione. È, appunto, una rete di basi, non un mucchio di sassi.
+Perché il codice, alla fine, non è solo logica e algoritmi. È comunicazione. È collaborazione.
 
 E io voglio contribuire a rendere questa rete più bella, più accessibile, più umana.
 
