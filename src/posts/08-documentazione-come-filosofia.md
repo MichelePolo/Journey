@@ -771,7 +771,6 @@ Restano da completare:
 E quando CodeIntel 1.0 sarà in produzione, ci sarà CodeIntel 2.0. E 3.0. Perché **il software, come la conoscenza, è un work in progress infinito**.
 
 Ma ora, con:
-- **9 sprint completati**
 - **753+ test** (94% coverage)
 - **6 agenti** funzionanti
 - **25,000 righe di documentazione**
