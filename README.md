@@ -22,7 +22,7 @@ Un template per blog minimalista basato su [Eleventy](https://www.11ty.dev/), pr
 ### 1. Clona il repository
 
 ```bash
-git clone https://github.com/TUO-USERNAME/Journey.git
+git clone https://github.com/MichelePolo/Journey
 cd Journey
 ```
 
@@ -51,14 +51,14 @@ Il sito sarà disponibile su `http://localhost:8080`
 
 #### 1. Modifica il `pathPrefix` in `.eleventy.js`
 
-Se pubblichi su GitHub Pages con un repository chiamato `Journey`, il sito sarà su `https://username.github.io/Journey/`.
+Se pubblichi su GitHub Pages con un repository chiamato `Journey`, il sito sarà su `https://TUO_USERNAME.github.io/Journey/`.
 
 ```javascript
 // .eleventy.js, riga 30
 pathPrefix: "/Journey/",  // Cambia "Journey" con il nome del tuo repo
 ```
 
-Se invece usi un dominio personalizzato o il repository è `username.github.io`, rimuovi o commenta questa riga:
+Se invece usi un dominio personalizzato o il repository è `TUO_USERNAME.github.io`, rimuovi o commenta questa riga:
 
 ```javascript
 // pathPrefix: "/Journey/",
