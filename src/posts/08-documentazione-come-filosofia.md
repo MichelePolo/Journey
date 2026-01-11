@@ -762,7 +762,6 @@ Questa serie di 8 post ha raccontato il viaggio di CodeIntel System: dalla visio
 **Ma il viaggio non è finito.**
 
 Restano da completare:
-- Sprint 9: RefactoringAgent
 - Sprint 10: CLI & API UX
 - Sprint 11-12: Performance & Plugins
 - Sprint 13: Testing finale
