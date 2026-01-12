@@ -796,13 +796,3 @@ Allora potremo parlare del codice che ho scritto/generato e la documentazione di
 - **Post 8**: Documentazione come Filosofia ← *Sei qui*
 
 ---
-
-**Risorse**:
-- [GitHub Repository](https://github.com/username/codeintel-system) (placeholder)
-- [Documentation](./codeintel-system/docs/)
-- [Sprint Index](./sprints/INDEX.md)
-
-**Contatti**:
-- Email: [your-email] (placeholder)
-- LinkedIn: [your-linkedin] (placeholder)
-- Twitter: [your-twitter] (placeholder)
