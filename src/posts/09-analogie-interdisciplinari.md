@@ -182,7 +182,7 @@ Crockford traccia un parallelo illuminante:
 
 ## Fisica e Sistemi Distribuiti
 
-Nulla trascende la fisica, le leggi del mondo e **"I sistemi distribuiti obbediscono alla fisica, non alle nostre speranze."**
+Nulla trascende la fisica e le leggi del mondo e **"I sistemi distribuiti obbediscono alla fisica, non alle nostre speranze."**
 
 - **Entropia**: i sistemi tendono al disordine. Senza manutenzione attiva, il caos vince
 - **Conservazione dell'energia**: non puoi creare performance dal nulla. Se guadagni in velocità, paghi in memoria o in complessità
