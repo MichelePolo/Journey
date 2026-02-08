@@ -101,7 +101,7 @@ L'IA è un co-reviewer eccezionale. Un code transformer instancabile. Ma il giud
 
 ## Il Thinking Flow che Emerge
 
-Dopo questa settimana, ho abbozzato un flow che userò come riferimento e probabilmente non sarà definitivo:
+Dopo questa settimana, ho abbozzato un flow che userò come riferimento anche se probabilmente non sarà definitivo:
 
 1. **Allineare**: obiettivi e invarianti (comportamento, contratti)
 2. **Costruire**: safety net di test e snapshot su casi reali
