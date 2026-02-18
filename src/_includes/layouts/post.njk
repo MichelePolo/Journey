@@ -1,26 +1,32 @@
 {% extends "layouts/base.njk" %}
 
 {% block content %}
-  <article>
-    <h1 style="margin-top: 0;">{{ title }}</h1>
-
-    <div class="post-meta">
+  <article class="max-w-4xl mx-auto">
+    <header class="mb-10">
+      <div class="mb-4">
+        <a href="{{ '/blog/' | url }}" class="text-primary hover:text-orange-400 font-mono text-xs flex items-center gap-1 uppercase tracking-wider no-underline">
+          <span class="material-symbols-outlined text-sm">arrow_back</span> All Posts
+        </a>
+      </div>
+      <h1 class="text-3xl md:text-5xl font-bold leading-tight mb-4 text-workbench-text-main tracking-tight">{{ title }}</h1>
       {% if page.date %}
-        <time datetime="{{ page.date | htmlDateString }}">
+        <div class="font-mono text-[11px] text-workbench-text-muted uppercase tracking-tighter mb-6">
           {{ page.date | readableDate }}
-        </time>
+        </div>
       {% endif %}
+      {% if quote %}
+        <blockquote class="border-l-2 border-primary/30 pl-6 my-6">
+          <p class="text-workbench-text-muted italic leading-relaxed">{{ quote }}</p>
+          {% if quoteAuthor %}
+            <p class="text-workbench-text-muted text-sm mt-2">&mdash; {{ quoteAuthor }}</p>
+          {% endif %}
+        </blockquote>
+      {% endif %}
+      <div class="border-b border-workbench-border"></div>
+    </header>
+
+    <div class="article-content">
+      {{ content | safe }}
     </div>
-
-    {% if quote %}
-      <blockquote>
-        <em>{{ quote }}</em><br/>
-        {% if quoteAuthor %}— {{ quoteAuthor }}{% endif %}
-      </blockquote>
-    {% endif %}
-
-    <hr>
-
-    {{ content | safe }}
   </article>
 {% endblock %}

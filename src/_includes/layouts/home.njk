@@ -1,39 +1,112 @@
 {% extends "layouts/base.njk" %}
-{% set showHeaderBio = true %}
 
 {% block content %}
-  <section style="margin-top: 0;">
-    <ul class="post-list">
+  {# Hero section #}
+  <section class="flex flex-col md:flex-row items-center gap-8 md:gap-16 mb-20">
+    <div class="relative group shrink-0">
+      <div class="absolute -inset-1 bg-primary/20 rounded-full blur-md opacity-0 group-hover:opacity-100 transition duration-500"></div>
+      <div class="relative size-40 md:size-52 rounded-full overflow-hidden border-4 border-workbench-border p-1 bg-workbench-bg">
+        <img alt="Michele Polo" class="w-full h-full object-cover rounded-full transition-all duration-500" src="{{ '/assets/avatar.png' | url }}">
+      </div>
+    </div>
+    <div class="flex flex-col text-center md:text-left flex-1">
+      <div class="inline-flex items-center justify-center md:justify-start gap-2 text-primary font-mono text-xs mb-4">
+        <span class="material-symbols-outlined text-sm">location_on</span>
+        <span class="tracking-widest uppercase">Verona // Italy</span>
+      </div>
+      <h2 class="text-4xl md:text-7xl font-bold leading-tight mb-6 text-workbench-text-main tracking-tight">
+        A Veronese Developer's <span class="text-primary">Journey into AI</span>
+      </h2>
+      <p class="text-lg text-workbench-text-muted leading-relaxed max-w-2xl font-light border-l-2 border-primary/30 pl-6">
+        Progetti per comprendere, documentare e analizzare codebase complesse con l'aiuto dell'IA.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center md:justify-start gap-4">
+        <a href="{{ '/blog/' | url }}" class="bg-primary hover:bg-orange-600 text-white px-6 py-2.5 rounded-sm font-bold text-sm uppercase tracking-widest transition-all shadow-lg shadow-primary/10 no-underline">
+          Read Blog
+        </a>
+        <a href="https://github.com/MichelePolo" target="_blank" class="bg-workbench-card hover:bg-workbench-border text-workbench-text-main px-6 py-2.5 rounded-sm font-bold text-sm border border-workbench-border uppercase tracking-widest transition-all no-underline">
+          Github di questo blog
+        </a>
+      </div>
+    </div>
+  </section>
+
+  {# Recent posts section #}
+  <section class="mb-20">
+    <div class="flex items-center justify-between mb-8 pb-4 border-b border-workbench-border">
+      <div class="flex items-center gap-3">
+        <span class="material-symbols-outlined text-primary">terminal</span>
+        <h3 class="text-sm font-bold text-workbench-text-muted uppercase tracking-[0.2em] m-0">Recent Posts</h3>
+      </div>
+      <a class="text-primary hover:text-orange-400 font-mono text-xs flex items-center gap-1 uppercase tracking-wider no-underline" href="{{ '/blog/' | url }}">
+        View Archive <span class="material-symbols-outlined text-sm">arrow_right_alt</span>
+      </a>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-workbench-border overflow-hidden rounded border border-workbench-border">
       {% for post in collections.post %}
-        {% set postNumber = post.fileSlug.split('-')[0] | int %}
-        <li>
-          <h2><a href="{{ post.url | url }}">{{ postNumber }}. {{ post.data.title }}</a></h2>
-          <div class="post-meta">
-            {% if post.date %}
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: text-bottom; margin-right: 0.3rem;">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z"></path>
-                <path d="M16 3v4"></path>
-                <path d="M8 3v4"></path>
-                <path d="M4 11h16"></path>
-                <path d="M7 14h.013"></path>
-                <path d="M10.01 14h.005"></path>
-                <path d="M13.01 14h.005"></path>
-                <path d="M16.015 14h.005"></path>
-                <path d="M13.015 17h.005"></path>
-                <path d="M7.01 17h.005"></path>
-                <path d="M10.01 17h.005"></path>
-              </svg>
-              <time datetime="{{ post.date | htmlDateString }}">
-                {{ post.date | readableDate }}
-              </time>
+        {% if loop.index <= 3 %}
+          <article class="bg-workbench-bg p-8 hover:bg-workbench-card transition-colors group{% if loop.index == 3 %} md:col-span-2{% endif %}">
+            {% if loop.index == 3 %}
+              <div class="flex items-center justify-between mb-6">
+                <span class="font-mono text-[11px] text-workbench-text-muted uppercase tracking-tighter">{{ post.date | readableDate }}</span>
+              </div>
+              <div class="md:flex gap-12">
+                <div class="md:flex-1">
+                  <h4 class="text-xl font-bold mb-4 group-hover:text-primary transition-colors text-workbench-text-main leading-tight">
+                    {{ post.data.title }}
+                  </h4>
+                  {% if post.data.subtitle %}
+                    <p class="text-sm text-workbench-text-muted leading-relaxed mb-8">
+                      {{ post.data.subtitle }}
+                    </p>
+                  {% endif %}
+                </div>
+                <div class="md:w-1/3 flex flex-col justify-end pb-8">
+                  <a href="{{ post.url | url }}" class="flex items-center gap-1 text-[11px] font-bold text-primary uppercase tracking-widest no-underline hover:text-orange-400">
+                    Read Article <span class="material-symbols-outlined text-sm">chevron_right</span>
+                  </a>
+                </div>
+              </div>
+            {% else %}
+              <div class="flex items-center justify-between mb-6">
+                <span class="font-mono text-[11px] text-workbench-text-muted uppercase tracking-tighter">{{ post.date | readableDate }}</span>
+              </div>
+              <h4 class="text-xl font-bold mb-4 group-hover:text-primary transition-colors text-workbench-text-main leading-tight">
+                {{ post.data.title }}
+              </h4>
+              {% if post.data.subtitle %}
+                <p class="text-sm text-workbench-text-muted leading-relaxed mb-8 line-clamp-3">
+                  {{ post.data.subtitle }}
+                </p>
+              {% endif %}
+              <div class="flex items-center justify-between mt-auto">
+                <a href="{{ post.url | url }}" class="flex items-center gap-1 text-[11px] font-bold text-primary uppercase tracking-widest no-underline hover:text-orange-400">
+                  Read Article <span class="material-symbols-outlined text-sm">chevron_right</span>
+                </a>
+                <span class="material-symbols-outlined text-workbench-border text-2xl group-hover:text-primary/20 transition-colors">code</span>
+              </div>
             {% endif %}
-          </div>
-          {% if post.data.subtitle %}
-            <p class="post-subtitle">{{ post.data.subtitle }}</p>
-          {% endif %}
-        </li>
+          </article>
+        {% endif %}
       {% endfor %}
-    </ul>
+    </div>
+  </section>
+
+  {# CTA section #}
+  <section class="bg-workbench-card border border-workbench-border rounded p-8 md:p-12 relative overflow-hidden">
+    <div class="absolute top-0 right-0 p-4">
+      <span class="material-symbols-outlined text-workbench-border text-6xl rotate-12">contact_support</span>
+    </div>
+    <div class="relative z-10">
+      <h3 class="text-2xl font-bold mb-4 text-workbench-text-main tracking-tight">Interessato ad approfondire?</h3>
+      <p class="text-workbench-text-muted max-w-lg mb-8 leading-relaxed">
+        Se stai lavorando a progetti che integrano l'IA nello sviluppo software, mi piacerebbe scambiare due chiacchiere.
+      </p>
+      <div class="flex gap-4">
+        <a href="mailto:michele.polo@gmail.com" class="bg-primary text-white px-8 py-3 rounded-sm font-bold flex items-center gap-3 hover:bg-orange-600 transition-colors uppercase text-sm tracking-widest no-underline">
+          <span class="material-symbols-outlined text-lg">send</span> Parliamo
+        </a>
+      </div>
+    </div>
   </section>
 {% endblock %}

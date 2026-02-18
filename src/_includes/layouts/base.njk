@@ -1,56 +1,106 @@
 <!doctype html>
-<html lang="it">
+<html class="dark" lang="it">
 <head>
   <meta charset="utf-8">
-  <title>{{ title }} | CodeIntel System</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }} | Michele Polo</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#f97415",
+            "workbench-bg": "#212737",
+            "workbench-card": "#161b22",
+            "workbench-border": "#30363d",
+            "workbench-text-main": "#d1d5db",
+            "workbench-text-muted": "#8b949e",
+          },
+          fontFamily: {
+            "display": ["Space Grotesk", "sans-serif"]
+          },
+          borderRadius: {
+            "none": "0",
+            "sm": "0.125rem",
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+          },
+        },
+      },
+    }
+  </script>
+  <style type="text/tailwindcss">
+    body {
+      font-family: 'Space Grotesk', sans-serif;
+      @apply bg-workbench-bg text-workbench-text-main selection:bg-primary/40;
+    }
+    .glass-nav {
+      backdrop-filter: blur(16px);
+      background-color: rgba(32, 34, 41, 0.85);
+    }
+  </style>
   <link rel="stylesheet" href="{{ '/assets/styles.css' | url }}">
 </head>
-<body>
-  <header>
-    <div class="header-top">
-      <h1><a href="{{ '/' | url }}">Michele Polo</a></h1>
-      <nav>
-        <a href="{{ '/blog/' | url }}">Posts</a>
-        <a href="{{ '/docs/' | url }}">About</a>
-      </nav>
-    </div>
-    {% if showHeaderBio %}
-    <div class="header-content">
-      <div class="avatar">
-        <img src="{{ '/assets/avatar.png' | url }}" alt="Michele Polo">
+<body class="min-h-screen relative">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+
+  <header class="sticky top-0 z-50 glass-nav border-b border-workbench-border px-4 md:px-8 py-3">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-4">
+        <a href="{{ '/' | url }}" class="flex items-center gap-2 no-underline">
+          <div class="size-8 bg-primary/10 border border-primary/30 rounded flex items-center justify-center text-primary">
+            <span class="material-symbols-outlined text-xl">terminal</span>
+          </div>
+          <span class="text-lg font-bold tracking-tight text-workbench-text-main">Michele Polo</span>
+        </a>
+        <div class="hidden lg:flex items-center h-4 w-px bg-workbench-border mx-2"></div>
+        <nav class="hidden md:flex items-center gap-6">
+          <a class="text-xs font-semibold uppercase tracking-wider text-workbench-text-muted hover:text-primary transition-colors no-underline" href="{{ '/blog/' | url }}">Posts</a>
+          <a class="text-xs font-semibold uppercase tracking-wider text-workbench-text-muted hover:text-primary transition-colors no-underline" href="{{ '/docs/' | url }}">About</a>
+        </nav>
       </div>
-      <div class="header-bio">
-        <p><b>A Veronese Developer's Journey into AI</b></p>
-        <p>Progetti per comprendere, documentare e analizzare codebase complesse con l'aiuto dell'IA.</p>
-        <p>Il mio primo progetto agentico, coming soon:<br> <i>CodeIntel System:</i> Local-first intelligence from AST to documentation.</p>
-        <div class="social-links">
-          <a href="https://github.com/MichelePolo" target="_blank" aria-label="GitHub">
-            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+      <div class="flex items-center gap-2">
+        <div class="flex items-center gap-1 border-r border-workbench-border pr-4 mr-2 hidden sm:flex">
+          <span class="text-[10px] font-mono text-workbench-text-muted">STATUS:</span>
+          <span class="size-2 rounded-full bg-green-500 animate-pulse"></span>
+          <span class="text-[10px] font-mono text-green-500">AVAILABLE</span>
+        </div>
+        <div class="flex items-center gap-1">
+          <a class="p-2 rounded hover:bg-workbench-border text-workbench-text-muted hover:text-workbench-text-main transition-all no-underline" href="https://github.com/MichelePolo" target="_blank" title="GitHub">
+            <span class="material-symbols-outlined text-lg">account_tree</span>
           </a>
-          <a href="https://x.com/giappone" target="_blank" aria-label="Twitter">
-            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          <a class="p-2 rounded hover:bg-workbench-border text-workbench-text-muted hover:text-workbench-text-main transition-all no-underline" href="https://x.com/giappone" target="_blank" title="X (Twitter)">
+            <span class="material-symbols-outlined text-lg">close</span>
           </a>
-          <a href="mailto:michele.polo@gmail.com" aria-label="Email">
-            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          <a class="p-2 rounded hover:bg-workbench-border text-workbench-text-muted hover:text-workbench-text-main transition-all no-underline" href="mailto:michele.polo@gmail.com" title="Email">
+            <span class="material-symbols-outlined text-lg">mail</span>
           </a>
         </div>
       </div>
     </div>
-    {% endif %}
   </header>
-  <div class="container">
 
-    <main>
-      {% block content %}
-        {{ content | safe }}
-      {% endblock %}
-    </main>
+  <main class="flex-1 w-full max-w-7xl mx-auto px-4 md:px-8 py-12">
+    {% block content %}
+      {{ content | safe }}
+    {% endblock %}
+  </main>
 
-    <footer>
-      <p>CodeIntel System — Local-first AI for code understanding.</p>
-      <p style="font-size: 0.85rem; color: #999;">Built with Eleventy • Hosted on GitHub Pages</p>
-    </footer>
-  </div>
+  <footer class="w-full max-w-7xl mx-auto px-4 md:px-8 py-8 border-t border-workbench-border flex flex-col md:flex-row items-center justify-between gap-6">
+    <div class="text-workbench-text-muted text-[11px] font-mono uppercase tracking-widest">
+      &copy; 2025 Michele Polo // Verona, IT
+    </div>
+    <div class="flex items-center gap-8">
+      <a class="text-workbench-text-muted hover:text-primary transition-colors text-[10px] font-bold uppercase tracking-widest no-underline" href="https://github.com/MichelePolo" target="_blank">GitHub</a>
+      <a class="text-workbench-text-muted hover:text-primary transition-colors text-[10px] font-bold uppercase tracking-widest no-underline" href="https://x.com/giappone" target="_blank">X (Twitter)</a>
+      <a class="text-workbench-text-muted hover:text-primary transition-colors text-[10px] font-bold uppercase tracking-widest no-underline" href="mailto:michele.polo@gmail.com">Email</a>
+    </div>
+  </footer>
+
+</div>
 </body>
 </html>
