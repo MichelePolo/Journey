@@ -19,7 +19,7 @@
 .article-content h3 { font-size: 1.125rem; }
 
 .article-content p {
-  color: #b0b2b5;
+  color: rgb(209 213 219 / var(--tw-text-opacity, 1));
   line-height: 1.8;
   margin: 0.75rem 0;
 }
