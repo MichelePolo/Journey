@@ -32,6 +32,8 @@ Ed è esattamente per questo che mandarla a prendere appunti al posto vostro è 
 
 Non perché gli appunti siano sbagliati. Saranno probabilmente ottimi. È perché il valore degli appunti non sta nel documento prodotto — sta nel processo che li genera.
 
+Gli atleti lo sanno da sempre: il corpo si adatta allo stress che viene applicato *direttamente* a lui. Il preparatore più bravo del mondo può ottimizzare ogni variabile dell'allenamento, ma non può correre al posto del corridore. Il cervello funziona con la stessa logica. Si rafforza attraverso lo sforzo che compie, non attraverso lo sforzo che osserva.
+
 ## Domande e Risposte
 
 Questa riflessione è nata da una conversazione. Qualcuno mi ha chiesto: *"Perché non usi l'AI per prendere appunti? Sarebbe molto più veloce."*
@@ -95,6 +97,24 @@ Forse. Ma c'è una differenza tra fatica inutile e fatica generativa.
 Portare scatoloni per un trasloco è fatica inutile: il risultato è spostare oggetti pesanti, il processo non mi trasforma. Sollevare pesi in palestra è fatica generativa: il risultato è un muscolo più forte, il processo è la trasformazione stessa.
 
 Prendere appunti è sollevare pesi. Non perché sia nobile soffrire, ma perché il meccanismo fisiologico è lo stesso: il sistema si rafforza solo attraverso lo stress controllato, non attraverso il riposo delegato.
+
+## Prendere Appunti per Tutti, Imparare per Sé
+
+C'è una variante di questo ragionamento che ho scoperto lavorando in gruppo.
+
+Quando sono in call — una riunione, una sessione di design, una discussione tecnica — condivido lo schermo e prendo appunti in tempo reale davanti a tutti. Sembra un gesto di servizio. In parte lo è: chi è in call vede emergere la struttura, vede i concetti organizzarsi, può correggere subito se sto fraintendendo.
+
+Ma c'è qualcosa di più sottile in gioco.
+
+Chi prende appunti guida implicitamente la conversazione.
+
+Non perché imponga la sua visione, ma perché il solo atto di scegliere cosa scrivere — e cosa non scrivere — orienta l'attenzione di tutti. Se sintetizzo in tempo reale, sto esercitando un giudizio su cosa è centrale e cosa è rumore. La platea lo percepisce. I concetti che appaiono sullo schermo diventano automaticamente i punti di riferimento condivisi della discussione.
+
+Il beneficio cognitivo però resta asimmetrico: chi scrive elabora. Chi guarda legge.
+
+Qui sta la differenza con gli strumenti che trascrivono le call automaticamente. Un AI che registra e sintetizza la riunione produce un documento. Non produce comprensione in nessuno dei partecipanti. Tutti hanno il riassunto; nessuno ha fatto lo sforzo di costruirlo. La riunione è documentata, non metabolizzata.
+
+Prendere appunti condivisi durante una call è uno dei rari casi in cui il beneficio personale e quello collettivo si sovrappongono senza cancellarsi. Ma solo se è un umano a tenerlo.
 
 ## Velocità vs. Profondità
 
