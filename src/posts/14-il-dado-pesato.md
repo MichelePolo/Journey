@@ -166,7 +166,8 @@ Usarlo bene significa capire cosa sta lanciando il dado — e decidere consapevo
 
 ## Conclusione: Demistificare l'intelligenza artificiale
 
-C'è una tendenza inevitabile a antropomorfizzare l'Intelligenza Artificiale, "La mia macchina si è offesa perché stanotte l'ho lasciata fuori dal garage". Gli LLM parlano la nostra lingua. Rispondono alle nostre domande. Sembrano capire il contesto e l'ironia, generano barzellette.
+C'è una tendenza inevitabile a antropomorfizzare l'Intelligenza Artificiale.
+Ma lo facevamo già: "La mia macchina si è offesa perché la scorsa notte l'ho lasciata fuori dal garage". Gli LLM parlano la nostra lingua. Rispondono alle nostre domande. Sembrano capire il contesto e l'ironia, generano barzellette.
 
 Ma sotto quella superficie c'è solo matematica: matrici di pesi, moltiplicazioni, softmax, logit, campionamento.
 
