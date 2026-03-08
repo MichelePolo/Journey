@@ -10,7 +10,7 @@ quoteAuthor: "Sydney J. Harris"
 
 ## Il Tiratore di Dadi Più Sofisticato del Mondo
 
-Immagina un dado. Non il classico cubetto a sei facce, ma un dado con centotrentamila facce — una per ogni possibile parola, frammento di parola, segno di punteggiatura che una macchina conosce. Ogni faccia ha un peso diverso, e quel peso cambia in base a tutto quello che è stato detto prima.
+Immagina un dado. Non il classico cubetto a sei facce, ma un dado con 1 Milione di facce — una per ogni possibile parola, frammento di parola, segno di punteggiatura che una macchina conosce. Ogni faccia ha un peso diverso, e quel peso cambia in base a tutto quello che è stato detto prima.
 
 Lanci il dado. Ottieni "il". I pesi cambiano. Rilanci. "gatto". Ancora. "dorme". E così via, token dopo token, finché la risposta non è completa.
 
