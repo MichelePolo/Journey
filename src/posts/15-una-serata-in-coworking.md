@@ -52,19 +52,21 @@ E allora chi ha delegato tutto il lavoro cognitivo a uno strumento, chi ha costr
 
 Oppure no. Non lo so.
 
-## La Domanda Senza Risposta
+## La Scelta
 
-Tornando a casa non avevo trovato la massima. Quella conclusione sintetica e definitiva che chiude una serata e la mette in ordine.
+Tornando a casa la massima l'avevo trovata. Non era quella che cercavo — era più scomoda.
 
-Non so se voglio ancora lavorare in questo settore così come è. Non so cosa resterà del mestiere dello sviluppatore se viene fatto sempre più spesso da chi non vuole impararlo davvero. Non so se l'industria che ho conosciuto sopravviverà al modo in cui si sta trasformando, né se quella trasformazione sia necessariamente una perdita o solo un cambiamento che non riesco ancora a leggere.
+In un sistema dove tutto è urgente, niente è davvero urgente. È un'emergenza permanente che si autoalimenta: clienti che cambiano idea, riunioni improvvisate, ticket che arrivano il venerdì pomeriggio. Chi sta dentro ci corre dietro. Chi ci corre dietro non costruisce niente.
 
-Klarna esiste. Funziona. Ma è altrove, in un altro paese, forse in un altro mondo.
+Io non voglio correre dietro.
 
-I ragazzini con la P.IVA esistono. Funzionano, per ora. Sono qui.
+Se devo faticare — e voglio faticare — deve essere su qualcosa che tra cinque anni esiste ancora e porta il mio nome. Non su una patch fatta di notte per un sistema che non avrebbe dovuto esistere. Non su una feature scritta in fretta per un cliente che la userà tre volte.
 
-Io sono nel mezzo — e quella sera a Verona, in uno spazio franco dove le persone si guardavano in faccia, non sono riuscito a capire da che parte del mezzo stare.
+Il sistema Italia non cambierà dall'esterno, per decreto o per denuncia. Cambia quando qualcuno decide di fare le cose diversamente e riesce a dimostrare che funziona. Non è ottimismo — è l'unica leva disponibile.
 
-**A volte la conclusione più onesta è non averne una.**
+Quella sera a Verona, in uno spazio franco dove le persone si guardavano in faccia, ho capito una cosa sola con certezza: l'urgenza vera non è scrivere codice. È costruire.
+
+**Il resto può aspettare. Anzi, il resto può aspettare per sempre.**
 
 ---
 
