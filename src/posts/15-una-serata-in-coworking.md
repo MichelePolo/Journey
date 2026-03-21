@@ -10,7 +10,7 @@ quoteAuthor: "William Arthur Ward"
 
 ## Il Palco e lo Stupore
 
-Uno spazio di coworking a Verona, una sala piena, un ambiente franco. Niente giacche, niente slide patinate — il tipo di posto dove le persone si siedono ancora vicine e si guardano in faccia.
+Uno spazio di coworking a Verona, una sala piena, un ambiente franco. Niente giacche, niente slide patinate — il tipo di posto dove le persone si siedono ancora vicine e si guardano in faccia, dividono una birra mentre interagiscono in maniera sana e senza costrutti.
 
 Sul palco c'è una speaker che lavora per Klarna. Racconta.
 
@@ -34,7 +34,8 @@ Quella sera, mentre la speaker parlava, guardavo le facce intorno a me. Riconosc
 
 A cena ho conosciuto due ragazzi giovani. Molto giovani. Sviluppano software con l'intelligenza artificiale, hanno la partita IVA, si vendono sul mercato.
 
-Il mio giudizio è arrivato in fretta — prima ancora che finissero di presentarsi. Dalle affermazioni tecniche era chiaro che la competenza era ancora in costruzione, che mancavano basi che si acquisiscono solo col tempo e con gli errori. Ho sentito quel fastidio sottile di chi ha passato anni a costruire qualcosa e vede qualcun altro saltare la coda.
+Il mio giudizio è arrivato in fretta — prima ancora che finissero di presentarsi. Dalle affermazioni tecniche era chiaro che la competenza era ancora in costruzione, che mancavano basi che si acquisiscono solo col tempo e con gli errori. Ho sentito quel fastidio sottile di chi ha passato anni a costruire qualcosa e vede qualcun altro saltare la coda. Non avranno mai modo di colmare il gap.
+Probabilmente i senior developer di oggi saranno gli ultimi senior dell'informatica, da oggi in poi tutti useranno il salta coda gratis dell'IA e senza rendersene conto si troveranno ammucchiati tutti nello stesso gap di esperienze mai fatte, codice mai scritto, errori mai fatti e mai pagati.
 
 Uno dei due ha raccontato con una certa disinvoltura di aver completato un'attività con Claude Code in tre ore e di aver fatturato mille euro.
 
@@ -42,11 +43,11 @@ Mi sono schifato. Non di lui — di me, un attimo dopo, quando me ne sono accort
 
 ## Il Bias e il Mercato
 
-Il mea culpa è stato rapido. Questi ragazzi sono intraprendenti in un mercato che l'intraprendenza la premia più della profondità. Non stanno facendo niente di sbagliato. Stanno leggendo il contesto meglio di quanto faccia chi si lamenta del contesto senza muoversi.
+Il mea culpa è stato rapido. Questi ragazzi sono intraprendenti in un mercato che l'intraprendenza la premia più della profondità. Non stanno facendo niente di sbagliato. *Stanno leggendo il contesto meglio di quanto faccia chi si lamenta del contesto senza muoversi.*
 
 Ma la domanda è rimasta lì, sul tavolo, tra i bicchieri.
 
-Un mercato che non sa misurare la qualità premia chi sa vendersi. Un mercato che impara a misurare esclude chi non sa fare. Il problema è che questo mercato — almeno il nostro — non sembra avere fretta di imparare.
+Un mercato che non sa misurare la qualità premia chi sa vendersi. Un mercato che impara a misurare esclude chi non sa fare. **Il problema è che questo mercato — almeno il nostro — non sembra avere fretta di imparare.**
 
 E allora chi ha delegato tutto il lavoro cognitivo a uno strumento, chi ha costruito la propria offerta su qualcosa che non capisce davvero, può prosperare a lungo. Forse abbastanza a lungo da non dover mai fare i conti con il gap.
 
@@ -59,8 +60,9 @@ Tornando a casa la massima l'avevo trovata. Non era quella che cercavo — era p
 In un sistema dove tutto è urgente, niente è davvero urgente. È un'emergenza permanente che si autoalimenta: clienti che cambiano idea, riunioni improvvisate, ticket che arrivano il venerdì pomeriggio. Chi sta dentro ci corre dietro. Chi ci corre dietro non costruisce niente.
 
 Io non voglio correre dietro.
+Se sulla matrice di Eisenhower tutto è urgente allora ho una possibilità, ciò che è veramente urgente lo posso decidere io.
 
-Se devo faticare — e voglio faticare — deve essere su qualcosa che tra cinque anni esiste ancora e porta il mio nome. Non su una patch fatta di notte per un sistema che non avrebbe dovuto esistere. Non su una feature scritta in fretta per un cliente che la userà tre volte.
+Se devo faticare — e voglio faticare — deve essere su qualcosa che tra cinque anni esiste ancora e porta il mio nome. Non su una patch fatta di notte per un sistema che non avrebbe dovuto esistere. Non su una feature scritta in fretta per un cliente che la userà tre volte. Non su una stima raffazzonata di una attività che non abbiamo capacity di erogare. se non io di notte.
 
 Il sistema Italia non cambierà dall'esterno, per decreto o per denuncia. Cambia quando qualcuno decide di fare le cose diversamente e riesce a dimostrare che funziona. Non è ottimismo — è l'unica leva disponibile.
 
