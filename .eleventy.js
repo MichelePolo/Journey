@@ -1,6 +1,7 @@
 module.exports = function (eleventyConfig) {
-  // Copia asset statici (css, immagini, js)
-  eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
+  // Copia asset statici (immagini, js) — CSS è gestito da Tailwind CLI
+  eleventyConfig.addPassthroughCopy({ "src/assets/avatar.png": "assets/avatar.png" });
+  eleventyConfig.addPassthroughCopy({ "src/assets/js": "assets/js" });
 
   // Filtri per le date
   eleventyConfig.addFilter("readableDate", (dateObj) => {

@@ -3,14 +3,15 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "npx @11ty/eleventy --serve --input=src --output=_site",
-    "build": "npx @11ty/eleventy --input=src --output=_site"
+    "dev": "npx @11ty/eleventy --serve & npx @tailwindcss/cli -i src/assets/styles.css -o _site/assets/styles.css --watch",
+    "build": "npx @tailwindcss/cli -i src/assets/styles.css -o _site/assets/styles.css && npx @11ty/eleventy"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@11ty/eleventy": "^3.1.2"
+    "@11ty/eleventy": "^3.1.2",
+    "@tailwindcss/cli": "^4.2.2"
   }
 }
