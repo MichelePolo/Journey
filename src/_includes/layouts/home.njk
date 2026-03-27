@@ -1,111 +1,139 @@
 {% extends "layouts/base.njk" %}
 
 {% block content %}
-  {# Hero section #}
-  <section class="flex flex-col md:flex-row items-center gap-8 md:gap-16 mb-20">
-    <div class="relative group shrink-0">
-      <div class="absolute -inset-1 bg-primary/20 rounded-full blur-md opacity-0 group-hover:opacity-100 transition duration-500"></div>
-      <div class="relative size-40 md:size-52 rounded-full overflow-hidden border-4 border-workbench-border p-1 bg-workbench-bg">
-        <img alt="Michele Polo" class="w-full h-full object-cover rounded-full transition-all duration-500" src="{{ '/assets/avatar.png' | url }}">
+  {# Hero Section #}
+  <section class="min-h-[75vh] flex flex-col justify-center relative">
+    <div class="flex flex-col md:flex-row md:items-center gap-12">
+      <div class="flex-1">
+        <h1 class="hero-item font-serif italic text-5xl md:text-8xl leading-tight mb-8">
+          A Veronese Developer's <br>
+          <span class="text-gradient">Journey into AI</span>
+        </h1>
+        <p class="hero-item text-xl md:text-2xl text-slate-400 max-w-2xl font-light leading-relaxed mb-12">
+          Progetti per comprendere, documentare e analizzare codebase complesse con l'aiuto dell'intelligenza artificiale.
+        </p>
+
+        <div class="hero-item flex flex-wrap gap-4">
+          <a href="#blog" class="glass-heavy px-8 py-4 rounded-full flex items-center gap-3 font-medium transition-colors hover:bg-white/15 no-underline">
+            Read Blog
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+          <a href="mailto:michele.polo@gmail.com" class="px-8 py-4 rounded-full border border-white/10 flex items-center gap-3 font-medium transition-colors hover:bg-white/[0.08] no-underline">
+            Contact Me
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-item relative shrink-0">
+        <div class="absolute inset-0 bg-blue-500/20 blur-3xl rounded-full"></div>
+        <img
+          src="{{ '/assets/avatar.png' | url }}"
+          alt="Michele Polo"
+          class="relative w-48 h-48 md:w-64 md:h-64 rounded-full border-2 border-white/10 object-cover shadow-2xl"
+        />
       </div>
     </div>
-    <div class="flex flex-col text-center md:text-left flex-1">
-      <div class="inline-flex items-center justify-center md:justify-start gap-2 text-primary font-mono text-xs mb-4">
-        <span class="material-symbols-outlined text-sm">location_on</span>
-        <span class="tracking-widest uppercase">Verona // Italy</span>
+
+    {# Scroll Indicator #}
+    <div class="scroll-indicator absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-slate-500">
+      <span class="text-xs tracking-widest uppercase">Scroll</span>
+      <div class="w-[1px] h-12 bg-gradient-to-b from-slate-500 to-transparent"></div>
+    </div>
+  </section>
+
+  {# Feature Cards / About #}
+  <section id="about" class="py-32">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="scroll-reveal glass p-8 rounded-3xl transition-all duration-300 hover:-translate-y-2 hover:bg-white/[0.08] border border-white/5 hover:border-white/10 shadow-xl shadow-black/20">
+        <div class="mb-6 p-4 w-fit rounded-2xl bg-white/5 shadow-inner">
+          <svg class="text-blue-400" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/><path d="M15 13a4.5 4.5 0 0 1-3 4 4.5 4.5 0 0 1-3-4"/><path d="M12 18v-6"/></svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-3 text-slate-100">AI Integration</h3>
+        <p class="text-slate-400 leading-relaxed">Esplorando come i Large Language Models possono trasformare il modo in cui scriviamo e leggiamo il codice.</p>
       </div>
-      <h2 class="text-4xl md:text-7xl font-bold leading-tight mb-6 text-workbench-text-main tracking-tight">
-        A Veronese Developer's <span class="text-primary">Journey into AI</span>
-      </h2>
-      <p class="text-lg text-workbench-text-muted leading-relaxed max-w-2xl font-light border-l-2 border-primary/30 pl-6">
-        Progetti per comprendere, documentare e analizzare codebase complesse con l'aiuto dell'IA.
-      </p>
-      <div class="mt-8 flex flex-wrap justify-center md:justify-start gap-4">
-        <a href="{{ '/blog/' | url }}" class="bg-primary hover:bg-orange-600 text-white px-6 py-2.5 rounded-sm font-bold text-sm uppercase tracking-widest transition-all shadow-lg shadow-primary/10 no-underline">
-          Read Blog
-        </a>
-        <a href="https://github.com/MichelePolo" target="_blank" class="bg-workbench-card hover:bg-workbench-border text-workbench-text-main px-6 py-2.5 rounded-sm font-bold text-sm border border-workbench-border uppercase tracking-widest transition-all no-underline">
-          Github di questo blog
-        </a>
+
+      <div class="scroll-reveal glass p-8 rounded-3xl transition-all duration-300 hover:-translate-y-2 hover:bg-white/[0.08] border border-white/5 hover:border-white/10 shadow-xl shadow-black/20">
+        <div class="mb-6 p-4 w-fit rounded-2xl bg-white/5 shadow-inner">
+          <svg class="text-indigo-400" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-3 text-slate-100">Code Analysis</h3>
+        <p class="text-slate-400 leading-relaxed">Strumenti e metodologie per navigare architetture software complesse con maggiore chiarezza.</p>
+      </div>
+
+      <div class="scroll-reveal glass p-8 rounded-3xl transition-all duration-300 hover:-translate-y-2 hover:bg-white/[0.08] border border-white/5 hover:border-white/10 shadow-xl shadow-black/20">
+        <div class="mb-6 p-4 w-fit rounded-2xl bg-white/5 shadow-inner">
+          <svg class="text-slate-300" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M15 2v2"/><path d="M15 20v2"/><path d="M2 15h2"/><path d="M2 9h2"/><path d="M20 15h2"/><path d="M20 9h2"/><path d="M9 2v2"/><path d="M9 20v2"/></svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-3 text-slate-100">Modern Tech</h3>
+        <p class="text-slate-400 leading-relaxed">Sperimentazione continua con le ultime tecnologie per costruire soluzioni robuste e scalabili.</p>
       </div>
     </div>
   </section>
 
-  {# Recent posts section #}
-  <section class="mb-20">
-    <div class="flex items-center justify-between mb-8 pb-4 border-b border-workbench-border">
-      <div class="flex items-center gap-3">
-        <span class="material-symbols-outlined text-primary">terminal</span>
-        <h3 class="text-sm font-bold text-workbench-text-muted uppercase tracking-[0.2em] m-0">Recent Posts</h3>
+  {# Recent Posts #}
+  <section id="blog" class="py-32">
+    <div class="scroll-reveal flex items-end justify-between mb-16">
+      <div>
+        <h2 class="text-4xl md:text-5xl font-serif italic mb-4">Recent Posts</h2>
+        <p class="text-slate-400 text-lg">Pensieri e riflessioni sul mio percorso.</p>
       </div>
-      <a class="text-primary hover:text-orange-400 font-mono text-xs flex items-center gap-1 uppercase tracking-wider no-underline" href="{{ '/blog/' | url }}">
-        View Archive <span class="material-symbols-outlined text-sm">arrow_right_alt</span>
+      <a href="{{ '/blog/' | url }}" class="hidden md:flex items-center gap-2 text-sm font-medium text-slate-400 hover:text-white transition-colors no-underline">
+        View Archive
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/></svg>
       </a>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-workbench-border overflow-hidden rounded border border-workbench-border">
+
+    <div class="grid grid-cols-1 gap-6">
       {% for post in collections.post %}
         {% if loop.index <= 3 %}
-          <article class="bg-workbench-bg p-8 hover:bg-workbench-card transition-colors group{% if loop.index == 3 %} md:col-span-2{% endif %}">
-            {% if loop.index == 3 %}
-              <div class="flex items-center justify-between mb-6">
-                <span class="font-mono text-[11px] text-workbench-text-muted uppercase tracking-tighter">{{ post.date | readableDate }}</span>
-              </div>
-              <div class="md:flex gap-12">
-                <div class="md:flex-1">
-                  <h4 class="text-xl font-bold mb-4 group-hover:text-primary transition-colors text-workbench-text-main leading-tight">
-                    {{ post.data.title }}
-                  </h4>
-                  {% if post.data.subtitle %}
-                    <p class="text-sm text-workbench-text-muted leading-relaxed mb-8">
-                      {{ post.data.subtitle }}
-                    </p>
-                  {% endif %}
-                </div>
-                <div class="md:w-1/3 flex flex-col justify-end pb-8">
-                  <a href="{{ post.url | url }}" class="flex items-center gap-1 text-[11px] font-bold text-primary uppercase tracking-widest no-underline hover:text-orange-400">
-                    Read Article <span class="material-symbols-outlined text-sm">chevron_right</span>
-                  </a>
-                </div>
-              </div>
-            {% else %}
-              <div class="flex items-center justify-between mb-6">
-                <span class="font-mono text-[11px] text-workbench-text-muted uppercase tracking-tighter">{{ post.date | readableDate }}</span>
-              </div>
-              <h4 class="text-xl font-bold mb-4 group-hover:text-primary transition-colors text-workbench-text-main leading-tight">
+          <a href="{{ post.url | url }}" class="scroll-reveal group glass p-8 rounded-3xl flex flex-col md:flex-row md:items-center justify-between gap-6 transition-all duration-300 border border-white/5 hover:border-white/10 hover:translate-x-2 hover:bg-white/[0.08] no-underline">
+            <div class="max-w-2xl">
+              <span class="text-xs font-mono text-blue-400/80 uppercase tracking-widest mb-3 block">
+                {{ post.date | readableDate }}
+              </span>
+              <h3 class="text-2xl font-medium mb-3 text-slate-200 group-hover:text-blue-300 transition-colors">
                 {{ post.data.title }}
-              </h4>
+              </h3>
               {% if post.data.subtitle %}
-                <p class="text-sm text-workbench-text-muted leading-relaxed mb-8 line-clamp-3">
-                  {{ post.data.subtitle }}
-                </p>
+                <p class="text-slate-400 line-clamp-2">{{ post.data.subtitle }}</p>
               {% endif %}
-              <div class="flex items-center justify-between mt-auto">
-                <a href="{{ post.url | url }}" class="flex items-center gap-1 text-[11px] font-bold text-primary uppercase tracking-widest no-underline hover:text-orange-400">
-                  Read Article <span class="material-symbols-outlined text-sm">chevron_right</span>
-                </a>
-                <span class="material-symbols-outlined text-workbench-border text-2xl group-hover:text-primary/20 transition-colors">code</span>
-              </div>
-            {% endif %}
-          </article>
+            </div>
+            <div class="flex items-center gap-2 text-slate-500 group-hover:text-blue-300 transition-colors shrink-0">
+              <span class="text-sm font-medium">Read Article</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+            </div>
+          </a>
         {% endif %}
       {% endfor %}
     </div>
   </section>
 
-  {# CTA section #}
-  <section class="bg-workbench-card border border-workbench-border rounded p-8 md:p-12 relative overflow-hidden">
-    <div class="absolute top-0 right-0 p-4">
-      <span class="material-symbols-outlined text-workbench-border text-6xl rotate-12">contact_support</span>
-    </div>
-    <div class="relative z-10">
-      <h3 class="text-2xl font-bold mb-4 text-workbench-text-main tracking-tight">Interessato ad approfondire?</h3>
-      <p class="text-workbench-text-muted max-w-lg mb-8 leading-relaxed">
+  {# Contact Section #}
+  <section class="py-32 text-center">
+    <div class="scroll-reveal glass p-12 md:p-24 rounded-[3rem] relative overflow-hidden shadow-2xl shadow-black/40 border border-white/10">
+      <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-1 bg-gradient-to-r from-transparent via-blue-500/50 to-transparent"></div>
+      <div class="absolute inset-0 bg-blue-500/5 blur-[100px] pointer-events-none"></div>
+
+      <h2 class="relative text-4xl md:text-6xl font-serif italic mb-8">Interessato ad approfondire?</h2>
+      <p class="relative text-xl text-slate-400 max-w-xl mx-auto mb-12">
         Se stai lavorando a progetti che integrano l'IA nello sviluppo software, mi piacerebbe scambiare due chiacchiere.
       </p>
-      <div class="flex gap-4">
-        <a href="mailto:michele.polo@gmail.com" class="bg-primary text-white px-8 py-3 rounded-sm font-bold flex items-center gap-3 hover:bg-orange-600 transition-colors uppercase text-sm tracking-widest no-underline">
-          <span class="material-symbols-outlined text-lg">send</span> Parliamo
+
+      <div class="relative flex flex-col md:flex-row items-center justify-center gap-8">
+        <a href="mailto:michele.polo@gmail.com" class="flex items-center gap-3 text-lg font-medium hover:text-blue-400 transition-colors no-underline">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          michele.polo@gmail.com
         </a>
+        <div class="hidden md:block h-6 w-[1px] bg-white/10"></div>
+        <div class="flex items-center gap-6">
+          <a href="https://github.com/MichelePolo" target="_blank" class="p-4 glass rounded-2xl hover:bg-white/10 hover:text-blue-300 transition-colors no-underline">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+          </a>
+          <a href="https://x.com/giappone" target="_blank" class="p-4 glass rounded-2xl hover:bg-white/10 hover:text-blue-300 transition-colors no-underline">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+          </a>
+        </div>
       </div>
     </div>
   </section>
