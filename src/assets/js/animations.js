@@ -1,6 +1,14 @@
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
 
+// Respect user's reduced motion preference
+const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+if (prefersReducedMotion) {
+  // Make scroll-reveal elements visible without animation
+  gsap.set(".scroll-reveal, .hero-item, .navbar, .post-header > *", { opacity: 1, y: 0 });
+} else {
+
 // --- Background Blobs ---
 gsap.to(".blob-blue", {
   scale: 1.1,
@@ -79,3 +87,5 @@ gsap.from(".post-header > *", {
   ease: "power3.out",
   stagger: 0.1
 });
+
+} // end if (!prefersReducedMotion)
