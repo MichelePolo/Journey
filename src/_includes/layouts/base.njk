@@ -1,106 +1,54 @@
 <!doctype html>
-<html class="dark" lang="it">
+<html lang="it">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ title }} | Michele Polo</title>
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
-  <script>
-    tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          colors: {
-            "primary": "#f97415",
-            "workbench-bg": "#212737",
-            "workbench-card": "#161b22",
-            "workbench-border": "#30363d",
-            "workbench-text-main": "#d1d5db",
-            "workbench-text-muted": "#8b949e",
-          },
-          fontFamily: {
-            "display": ["Space Grotesk", "sans-serif"]
-          },
-          borderRadius: {
-            "none": "0",
-            "sm": "0.125rem",
-            "DEFAULT": "0.25rem",
-            "lg": "0.5rem",
-          },
-        },
-      },
-    }
-  </script>
-  <style type="text/tailwindcss">
-    body {
-      font-family: 'Space Grotesk', sans-serif;
-      @apply bg-workbench-bg text-workbench-text-main selection:bg-primary/40;
-    }
-    .glass-nav {
-      backdrop-filter: blur(16px);
-      background-color: rgba(32, 34, 41, 0.85);
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/styles.css' | url }}">
 </head>
-<body class="min-h-screen relative">
-<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<body class="min-h-screen relative selection:bg-blue-500/30">
 
-  <header class="sticky top-0 z-50 glass-nav border-b border-workbench-border px-4 md:px-8 py-3">
-    <div class="max-w-7xl mx-auto flex items-center justify-between">
-      <div class="flex items-center gap-4">
-        <a href="{{ '/' | url }}" class="flex items-center gap-2 no-underline">
-          <div class="size-8 bg-primary/10 border border-primary/30 rounded flex items-center justify-center text-primary">
-            <span class="material-symbols-outlined text-xl">terminal</span>
-          </div>
-          <span class="text-lg font-bold tracking-tight text-workbench-text-main">Michele Polo</span>
-        </a>
-        <div class="hidden lg:flex items-center h-4 w-px bg-workbench-border mx-2"></div>
-        <nav class="hidden md:flex items-center gap-6">
-          <a class="text-xs font-semibold uppercase tracking-wider text-workbench-text-muted hover:text-primary transition-colors no-underline" href="{{ '/blog/' | url }}">Posts</a>
-          <a class="text-xs font-semibold uppercase tracking-wider text-workbench-text-muted hover:text-primary transition-colors no-underline" href="{{ '/docs/' | url }}">About</a>
-        </nav>
-      </div>
-      <div class="flex items-center gap-2">
-        <div class="flex items-center gap-1 border-r border-workbench-border pr-4 mr-2 hidden sm:flex">
-          <span class="text-[10px] font-mono text-workbench-text-muted">STATUS:</span>
-          <span class="size-2 rounded-full bg-green-500 animate-pulse"></span>
-          <span class="text-[10px] font-mono text-green-500">AVAILABLE</span>
-        </div>
-        <div class="flex items-center gap-1">
-          <a class="p-2 rounded hover:bg-workbench-border text-workbench-text-muted hover:text-workbench-text-main transition-all no-underline" href="https://github.com/MichelePolo" target="_blank" title="GitHub">
-            <span class="material-symbols-outlined text-lg">account_tree</span>
-          </a>
-          <a class="p-2 rounded hover:bg-workbench-border text-workbench-text-muted hover:text-workbench-text-main transition-all no-underline" href="https://x.com/giappone" target="_blank" title="X (Twitter)">
-            <span class="material-symbols-outlined text-lg">close</span>
-          </a>
-          <a class="p-2 rounded hover:bg-workbench-border text-workbench-text-muted hover:text-workbench-text-main transition-all no-underline" href="mailto:michele.polo@gmail.com" title="Email">
-            <span class="material-symbols-outlined text-lg">mail</span>
-          </a>
-        </div>
+  <!-- Ambient Background Blobs -->
+  <div class="fixed inset-0 z-0 overflow-hidden pointer-events-none">
+    <div class="blob-blue absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-blue-500/20 blur-[120px]"></div>
+    <div class="blob-indigo absolute bottom-[10%] right-[-5%] w-[35%] h-[35%] rounded-full bg-indigo-500/20 blur-[120px]"></div>
+    <div class="blob-slate absolute top-[20%] right-[15%] w-[20%] h-[20%] rounded-full bg-slate-400/10 blur-[100px]"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar fixed top-0 left-0 right-0 z-50 flex justify-center p-6">
+    <div class="glass px-6 py-3 rounded-full flex items-center gap-8 text-sm font-medium shadow-lg shadow-black/20">
+      <a href="{{ '/' | url }}" class="flex items-center gap-3 hover:text-blue-300 transition-colors">
+        <img
+          src="{{ '/assets/avatar.png' | url }}"
+          alt="Michele Polo"
+          class="w-7 h-7 rounded-full border border-white/20"
+        />
+        <span>Michele Polo</span>
+      </a>
+      <div class="h-4 w-[1px] bg-white/10 hidden md:block"></div>
+      <div class="hidden md:flex items-center gap-6 text-slate-300">
+        <a href="{{ '/blog/' | url }}" class="hover:text-white transition-colors">Blog</a>
+        <a href="{% if page.url == '/' %}#about{% else %}{{ '/' | url }}#about{% endif %}" class="hover:text-white transition-colors">About</a>
+        <a href="https://github.com/MichelePolo" target="_blank" class="hover:text-white transition-colors">GitHub</a>
       </div>
     </div>
-  </header>
+  </nav>
 
-  <main class="flex-1 w-full max-w-7xl mx-auto px-4 md:px-8 py-12">
+  <main class="relative z-10 max-w-5xl mx-auto px-6 pt-32 pb-24">
     {% block content %}
       {{ content | safe }}
     {% endblock %}
   </main>
 
-  <footer class="w-full max-w-7xl mx-auto px-4 md:px-8 py-8 border-t border-workbench-border flex flex-col md:flex-row items-center justify-between gap-6">
-    <div class="text-workbench-text-muted text-[11px] font-mono uppercase tracking-widest">
-      &copy; 2025 Michele Polo // Verona, IT
-    </div>
-    <div class="flex items-center gap-8">
-      <a class="text-workbench-text-muted hover:text-primary transition-colors text-[10px] font-bold uppercase tracking-widest no-underline" href="https://github.com/MichelePolo" target="_blank">GitHub</a>
-      <a class="text-workbench-text-muted hover:text-primary transition-colors text-[10px] font-bold uppercase tracking-widest no-underline" href="https://x.com/giappone" target="_blank">X (Twitter)</a>
-      <a class="text-workbench-text-muted hover:text-primary transition-colors text-[10px] font-bold uppercase tracking-widest no-underline" href="mailto:michele.polo@gmail.com">Email</a>
-    </div>
+  <footer class="relative z-10 border-t border-white/5 py-12 text-center text-slate-500 text-sm">
+    <p>&copy; {% year %} Michele Polo. Built with passion and AI.</p>
   </footer>
 
-</div>
+  <!-- GSAP -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script src="{{ '/assets/js/animations.js' | url }}"></script>
 </body>
 </html>
