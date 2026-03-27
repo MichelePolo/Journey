@@ -2,173 +2,111 @@
 layout: layouts/post.njk
 tags: [post]
 title: "Non Si Finisce Mai"
-subtitle: "Un percorso di studio che ha iniziato con un assistente di coding e non sa ancora dove finisce"
+subtitle: "Ho scoperto di saper volare e ho volato sul divano"
 date: 2026-03-27
-quote: "Il vero viaggio di scoperta non consiste nel cercare nuovi paesaggi, ma nell'avere nuovi occhi."
-quoteAuthor: "Marcel Proust"
+quote: "Il gioco è la forma più alta di ricerca."
+quoteAuthor: "Albert Einstein"
 ---
 
-## Maggio dell'Anno Scorso
+## Tutto d'un Tratto, Sapevo Volare
 
-Tutto è iniziato con una cosa semplice: volevo scrivere codice più velocemente.
+Immagina di scoprire all'improvviso di saper volare.
 
-Maggio 2025. Un assistente di coding. Un editor, un prompt, qualcosa che rispondeva alle domande sul codice senza costringermi ad aprire Stack Overflow. Il primo impatto è stato quello di tutti: *funziona davvero*. Non perfettamente, non sempre, ma abbastanza da cambiare il ritmo.
+Non piano piano, non con allenamento. Dal niente: puoi volare. Cosa fai?
 
-Non sapevo ancora che quella porta portava a una stanza più grande. E che quella stanza portava a un corridoio. E che il corridoio non aveva fondo visibile.
+La risposta onesta, almeno la mia, è: voli dappertutto. Voli in bagno. Voli sul divano. Usi il volo per raggiungere il frigo. Sprechi il superpotere per cose che avresti fatto uguale a piedi, solo con più stile.
 
-Questo è il racconto di quel percorso — non come curriculum, ma come mappa. Una mappa di chi era convinto di stare imparando a usare uno strumento, e si è ritrovato a studiare il funzionamento della mente artificiale, il trading algoritmico, la linguistica computazionale, e l'architettura dei modelli neurali.
+Così è stato con l'IA.
 
-Non si finisce mai. Questa non è una lamentela.
+Maggio 2025. Scopro che con un prompt posso costruire cose che prima mi avrebbero preso giorni. Il primo riflesso non è stato "come uso questo in modo intelligente?" — è stato usarla per *tutto*. Portali web, dashboard, script, configurazioni. Anche le commit. Soprattutto le commit. Mille idee, mille esperimenti avviati in parallelo, nessuno finito bene.
 
-## Livello Uno: L'Assistente
+Volavo sul divano.
 
-Il punto di ingresso è lo stesso per quasi tutti.
+## Il Problema di Chi Sa Volare Senza Capire Come
 
-Portali web. Dashboard. Cose concrete, cose che si vedono. L'IA come acceleratore: descrivi il componente, ricevi il codice, adatti, iterei. Il ciclo di feedback è immediato, il guadagno di velocità è reale, la sensazione è quella di avere un collaboratore instancabile che non si stanca mai di spiegare e non si offende se gli chiedi di riscrivere tutto.
+Il guaio del volo improvviso è che non sai perché funziona. E quando smette di funzionare — o funziona male — non hai nessuno strumento per capire cosa sta succedendo.
 
-In questa fase si impara qualcosa di fondamentale senza accorgersene: **il modo in cui fai la domanda determina la qualità della risposta**. Il prompt è un'interfaccia. Chi sa usarla bene ottiene risultati diversi rispetto a chi la usa come se fosse un motore di ricerca.
+L'IA che allucinava sicura. L'IA che riscriveva tutto invece di correggere un dettaglio. L'IA che produceva codice che sembrava giusto e non lo era. Ogni volta la reazione era "strano" — non "capisco perché è successo".
 
-Qui nasce il primo studio implicito: capire come comunicare con una macchina che parla come un umano ma ragiona in modo statistico.
+Finché non ho deciso di fare una cosa che avrei dovuto fare dall'inizio: capire davvero cosa ho tra le mani.
 
-## Livello Due: Il Sistema
+## Passo Uno: Demistificare
 
-Dopo i portali e le dashboard è arrivata l'infrastruttura di trading.
+Il primo passo vero non è stato usare meglio l'IA. È stato smettere di trattarla come magia.
 
-Non era più solo "genera questo componente". Era: costruisci un sistema che analizza il contesto di mercato, che usa il machine learning per interpretare segnali, che prende decisioni su basi statistiche. Un sistema con stati, con pipeline, con feedback loop.
+Un LLM non pensa. Non capisce. Non ragiona. Genera il prossimo token più probabile dato il contesto — miliardi di volte, molto velocemente, con pesi calibrati su quantità di testo che nessun essere umano potrebbe leggere in cento vite. Il risultato *assomiglia* a comprensione. Non lo è.
 
-Qui il salto è stato verticale.
+Capire questo cambia tutto. Smetti di fidarti del tono sicuro come segnale di correttezza. Smetti di aspettarti che "ricordi" tra sessioni. Capisci perché certi prompt funzionano e altri no. Capisci perché con più contesto le risposte migliorano — non per magia, ma perché hai dato più token su cui basare i lanci successivi.
 
-Il machine learning non è un'API. Non è qualcosa che si installa e si configura. È una disciplina con le sue fondamenta matematiche, le sue metriche, i suoi trade-off. Feature engineering. Normalizzazione. Overfitting. Validazione out-of-sample. La differenza tra un modello che funziona sul backtest e uno che sopravvive al mercato reale è la stessa differenza tra un test che passa e un sistema che regge in produzione — moltiplicata per il fatto che qui l'errore ha un costo immediato e misurabile.
+La demistificazione non riduce lo strumento. Lo rende usabile sul serio.
 
-**L'IA come assistente di coding aveva aperto la porta al machine learning come disciplina di studio.**
+## Passo Due: Imparare a Pilotare
 
-## Livello Tre: La Semantica del Codice
+Capito cos'è, il passo successivo è capire come si pilota.
 
-Parallelamente al trading, è arrivata la libreria TypeScript per la visualizzazione dei grafici.
+Nel caso di Claude — ma il discorso vale per qualsiasi LLM avanzato — c'è un ecosistema di strumenti che la maggior parte delle persone non esplora mai: hooks, commands, skills, MCP, agents, `CLAUDE.md`. Ognuno risolve un problema specifico. Ognuno cambia il modo in cui interagisci con il modello.
 
-Sembra laterale. Non lo è.
+Non è roba da nerd. È la differenza tra guidare una macchina conoscendo solo l'acceleratore e guidarla conoscendo anche freni, marce, e sterzo. La velocità massima è la stessa — ma dove arrivi, no.
 
-Costruire una libreria — non un'applicazione, una libreria — richiede di pensare alle interfacce, alle astrazioni, ai contratti tra componenti. Richiede di chiedersi come il codice verrà *usato*, non solo come funziona. È un esercizio di design API che porta naturalmente a interrogarsi sulla struttura sintattica e semantica del codice stesso.
+## Passo Tre: Sbagliare con Metodo
 
-Da qui è partito lo studio dell'AST — Abstract Syntax Tree. Tree-sitter. Il parsing. La grammatica formale dei linguaggi di programmazione.
+Poi viene la parte più importante: provarci, sbagliare, capire perché.
 
-Il codice non è testo. È struttura. E quella struttura si può analizzare, manipolare, interrogare. Nasce così CodeIntel System: un sistema di comprensione e gestione del codice sorgente tramite IA. Non un linter, non un formatter — uno strumento che capisce *cosa fa* il codice, non solo *come è scritto*.
+Non c'è scorciatoia. Si impara cosa funziona meglio solo dopo aver visto cosa funziona peggio. Un contesto mal costruito. Un agent che fa troppo da solo. Un hook che si attiva quando non dovrebbe. Un `CLAUDE.md` che dà istruzioni contraddittorie.
 
-**Studiare il codice come oggetto linguistico apre una finestra sulla linguistica computazionale che non si chiude facilmente.**
+Ogni errore è più informativo di dieci tutorial che spiegano come fare tutto giusto.
 
-## Livello Quattro: Il Recupero dell'Informazione
+## Gli Esperimenti
 
-Un sistema di code intelligence ha bisogno di memoria. Non la memoria di sessione di un LLM — memoria persistente, strutturata, interrogabile.
+Da qui in poi è diventato un gioco. Un gioco vero — con la curiosità che traina e il divertimento che tiene svegli fino a tardi.
 
-Entra in gioco il RAG: Retrieval-Augmented Generation.
+Una lista, senza troppi dettagli, perché i dettagli qui contano meno della traiettoria:
 
-La prima implementazione è lineare: chunk il documento, calcola gli embedding, salva nel database vettoriale, recupera per similarità coseno, inietta nel contesto. Funziona. Poi si scopre che funziona male su certi tipi di query. Allora si affina: chunking semantico invece di chunking per dimensione fissa. Poi re-ranking. Poi query expansion. Poi strategie ibride che combinano ricerca vettoriale e BM25.
+- Portali web e dashboard, i primi voli goffi
+- Un'infrastruttura di trading che usa il machine learning per leggere il contesto di mercato
+- Una libreria TypeScript per visualizzare grafici — non un'app, una libreria
+- Un sistema per capire e gestire il codice sorgente tramite IA
+- Pipeline di ingestion e RAG, con una trentina di strategie diverse provate e confrontate
+- Studio della semantica e sintassi del codice come oggetto linguistico
+- Studio degli LLM dall'interno — come funzionano davvero
+- Lo SDLC ripensato con l'IA dentro al loop
+- LLM installati sul cellulare e sul Mac
 
-Una trentina di strategie diverse, nel tempo. Non per collezionarle — per capire quando ciascuna funziona meglio e perché. **Ogni strategia fallita insegna qualcosa che nessun tutorial spiega.**
+Ogni voce di questa lista ha aperto almeno tre strade nuove. È questo l'effetto più strano e più bello: non arrivi a una risposta, arrivi a domande migliori. E le domande migliori generano un effetto wow che non si consuma — anzi, cresce.
 
-Il RAG è diventato un laboratorio di information retrieval, di teoria dell'informazione, di compromessi tra precisione e recall. Un campo che esiste da prima che esistessero i transformer, e che ha trovato nuova vita nell'era dei LLM.
+## Usare l'IA Come Feature, o Come Prodotto
 
-## Livello Cinque: Aprire il Cofano
+A un certo punto lo scenario cambia.
 
-A un certo punto non bastava più sapere *cosa* fa un LLM. Bisognava sapere *come*.
+Non è più "come uso l'IA per fare X più velocemente". Diventa: l'IA può essere *dentro* X. Può essere la feature centrale di un prodotto. Può essere il prodotto stesso.
 
-Aprire il cofano.
+È uno shift mentale che apre un territorio completamente diverso. Non stai più accelerando il tuo lavoro — stai costruendo sistemi che non sarebbero esistiti prima. Sistemi che imparano, che si adattano, che migliorano con l'uso.
 
-Tokenizzazione. Embedding. Self-attention. Layer transformer. Softmax. Temperatura. Il dado pesato — quella metafora che spiega meglio di qualsiasi altra cosa perché il modello può essere così sicuro quando sbaglia: non perché mente, ma perché non ha accesso al concetto di verità. Genera ciò che è statisticamente probabile, con la stessa fluidità indifferente a prescindere dalla correttezza.
+Questo è il territorio dove si vola davvero alto. E dove non basta saper volare — bisogna sapere dove si vuole andare.
 
-Studiare l'architettura degli LLM ha cambiato il modo di usarli. Quando capisci che la chain-of-thought funziona perché introduce più token di contesto su cui basare i lanci successivi — non perché il modello "ragiona davvero" — smetti di trattare le risposte come output di un esperto e inizi a trattarle come output di un sistema probabilistico molto sofisticato che va guidato, verificato, calibrato.
+## Alla Fine, il Reinforcement Learning sul Cellulare
 
-**La comprensione meccanica è il miglior antidoto all'antropomorfizzazione.**
+L'ultimo esperimento — finora — è il più strano e il più personale.
 
-## Livello Sei: Lo SDLC Aumentato
+Reinforcement learning su modelli open source. Modelli Qwen, ottimamente distillati, che girano sul telefono. Training locale, iterazioni veloci, controllo completo del processo.
 
-Nel mezzo di tutto questo, lo studio del processo di sviluppo.
+Non è roba da laboratorio di ricerca. È roba che funziona sul dispositivo che ho in tasca.
 
-Come cambia il ciclo di vita del software quando l'IA è dentro il loop? Non come strumento esterno che accelera la scrittura, ma come partecipante attivo nella progettazione, nella revisione, nella documentazione?
+E qui ho capito una cosa che non avevo capito prima: non stavo costruendo per un cliente, non stavo risolvendo un problema di business. Stavo studiando. Stavo volando per vedere dove riuscivo ad arrivare.
 
-L'IA non migliora il processo di sviluppo automaticamente. Lo amplifica — nel bene e nel male. Un processo caotico con l'IA diventa più caotico più velocemente. Un processo rigoroso con l'IA diventa più rigoroso con meno attrito.
+Lo scopo, alla fine, ero io.
 
-La disciplina del software engineering — requisiti, architettura, test, review — non diventa meno importante nell'era dell'IA. Diventa *più* importante, perché la velocità con cui si può produrre codice cattivo aumenta esponenzialmente.
+## Non Si Finisce Mai
 
-**Imparare a lavorare con l'IA ha richiesto di tornare alle basi del mestiere.**
+Il percorso non ha una destinazione. Ha una direzione.
 
-## Livello Sette: I Modelli sul Dispositivo
+E la direzione, scopri, la scegli tu — non il mercato, non il framework più di moda, non il tutorial più condiviso su LinkedIn. La scegli tu ogni volta che ti chiedi *cosa succede se provo questo*.
 
-L'ultimo passo — finora — è stato portare i modelli sul cellulare e sul Mac.
+Chi trova questo sfiancante probabilmente cerca la padronanza definitiva — il punto in cui si smette di imparare. Non arriva.
 
-Non per curiosità. Per necessità: il reinforcement learning per il trading richiede sperimentazione rapida, iterazioni locali, controllo completo del processo di addestramento. I modelli Qwen 3.5, ottimamente distillati, si prestano a questo tipo di deployment.
+Chi lo trova divertente ha già capito il gioco.
 
-Ma l'installazione di un LLM in locale apre un altro capitolo: la gestione delle risorse hardware, la quantizzazione dei pesi, i formati GGUF e ONNX, i runtime di inferenza. Un altro strato di competenza che si sovrappone a tutti i precedenti.
-
-E poi c'è il reinforcement learning da linguaggio — RLHF e le sue varianti. Come si addestra un modello a comportarsi in modo desiderabile. Come si costruisce una funzione di reward che catturi davvero l'obiettivo. Come si evita che il modello ottimizzi la metrica invece del comportamento.
-
-Un campo aperto. Un'area di ricerca attiva. La frontiera si è spostata ancora.
-
-## La Mappa del Percorso
-
-Guardando indietro, il percorso ha una struttura che non era visibile mentre si percorreva:
-
-```
-Assistente di coding
-    └── Prompt engineering
-    └── Portali web, dashboard
-
-Machine learning applicato
-    └── Trading algoritmico
-    └── Feature engineering, validazione
-
-Semantica del codice
-    └── AST, Tree-sitter, parsing
-    └── Code intelligence, analisi strutturale
-
-Information retrieval
-    └── RAG, embedding, database vettoriali
-    └── 30+ strategie, chunking semantico, re-ranking
-
-Architettura degli LLM
-    └── Transformer, attention, softmax
-    └── Tokenizzazione, embedding, temperatura
-
-SDLC aumentato
-    └── Processo di sviluppo con IA
-    └── Qualità, revisione, documentazione
-
-Deployment locale
-    └── Modelli su dispositivo, quantizzazione
-    └── Reinforcement learning, RLHF
-```
-
-Non è un curriculum lineare. È una mappa dove ogni punto di arrivo apre tre nuovi percorsi.
-
-## I Prossimi Passi
-
-Se la mappa ha una direzione, è questa:
-
-**Reinforcement learning applicato al dominio**: affinare i modelli per il trading non è solo un esercizio tecnico — è capire come si trasferisce conoscenza di dominio in un sistema che impara per feedback. La funzione di reward è un'ipotesi sul mondo. Scriverla bene è una competenza rara.
-
-**Architetture multi-agente**: i sistemi dove più LLM cooperano, si specializzano, si verificano a vicenda. Non è fantascienza — è l'evoluzione naturale del RAG e degli agent framework. La sfida è l'orchestrazione: chi decide cosa, quando, con quale priorità.
-
-**Valutazione e metriche**: uno dei problemi più sottovalutati nell'IA applicata. Come misuri che il tuo sistema funziona bene? Le metriche classiche del ML non bastano quando l'output è testo. L'evaluazione diventa essa stessa un problema di ricerca.
-
-**La semantica a runtime**: non solo capire il codice statico, ma il codice in esecuzione. Trace distribuiti, profiling, analisi del comportamento a runtime. Il confine tra code intelligence e observability è più sottile di quanto sembri.
-
-**I fondamenti matematici**: tornare indietro, riempire i gap. L'algebra lineare alla base degli embedding. La teoria dell'informazione alla base della tokenizzazione. La statistica bayesiana alla base del ragionamento sotto incertezza. Non per fare ricerca — per capire davvero cosa succede sotto il cofano.
-
-## La Morale
-
-Non si finisce mai.
-
-Non è una minaccia. Non è un invito all'ansia. È la descrizione di un campo che è vivo, che si muove, che cambia mentre lo studi. Ogni risposta che trovi apre due domande nuove. Ogni sistema che costruisci rivela una complessità che non era visibile dall'esterno.
-
-C'è chi trova questo sfiancante. C'è chi lo trova liberatorio.
-
-La differenza sta in cosa si cerca. Se si cerca la padronanza definitiva — il punto in cui si può smettere di imparare perché si sa tutto — questo campo sarà sempre una frustrazione. Non arriva quel punto. Non esiste.
-
-Se invece si cerca il movimento — il piacere di capire qualcosa che prima non si capiva, il momento in cui un concetto cade al suo posto, la soddisfazione di un sistema che funziona per ragioni che si comprendono — allora questo è uno dei campi più ricchi che esistano.
-
-**Il viaggio non ha destinazione. Ha solo direzione.**
-
-E la direzione, per adesso, è ancora in avanti.
+**Vola più lontano chi vola per il gusto di volare.**
 
 ---
 
