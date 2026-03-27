@@ -16,6 +16,14 @@ body {
   overflow-x: hidden;
 }
 
+/* Animation initial states — hidden by default, revealed by GSAP */
+.scroll-reveal,
+.hero-item,
+.post-header > * {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
 /* Glass utilities */
 .glass {
   background: var(--color-glass);

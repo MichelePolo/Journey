@@ -5,7 +5,7 @@ gsap.registerPlugin(ScrollTrigger);
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 if (prefersReducedMotion) {
-  // Make scroll-reveal elements visible without animation
+  // Make all elements visible without animation
   gsap.set(".scroll-reveal, .hero-item, .navbar, .post-header > *", { opacity: 1, y: 0 });
 } else {
 
@@ -39,17 +39,16 @@ gsap.to(".blob-slate", {
 });
 
 // --- Navbar fade-in ---
-gsap.from(".navbar", {
-  y: -50,
-  opacity: 0,
-  duration: 0.8,
-  ease: "power3.out"
-});
+gsap.fromTo(".navbar",
+  { y: -50, opacity: 0 },
+  { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" }
+);
 
 // --- Hero stagger (homepage only) ---
-gsap.from(".hero-item", {
-  y: 30,
-  opacity: 0,
+// Initial state set in CSS (opacity: 0, translateY: 30px)
+gsap.to(".hero-item", {
+  y: 0,
+  opacity: 1,
   duration: 0.8,
   ease: "power3.out",
   stagger: 0.15
@@ -67,10 +66,11 @@ gsap.to(".scroll-indicator", {
 });
 
 // --- Scroll-triggered reveal for sections ---
+// Initial state set in CSS (opacity: 0, translateY: 30px)
 ScrollTrigger.batch(".scroll-reveal", {
-  onEnter: (batch) => gsap.from(batch, {
-    y: 30,
-    opacity: 0,
+  onEnter: (batch) => gsap.to(batch, {
+    y: 0,
+    opacity: 1,
     duration: 0.8,
     ease: "power3.out",
     stagger: 0.15
@@ -80,9 +80,10 @@ ScrollTrigger.batch(".scroll-reveal", {
 });
 
 // --- Post page header ---
-gsap.from(".post-header > *", {
-  y: 20,
-  opacity: 0,
+// Initial state set in CSS (opacity: 0, translateY: 30px)
+gsap.to(".post-header > *", {
+  y: 0,
+  opacity: 1,
   duration: 0.6,
   ease: "power3.out",
   stagger: 0.1
