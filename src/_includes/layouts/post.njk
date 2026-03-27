@@ -1,28 +1,33 @@
 {% extends "layouts/base.njk" %}
 
 {% block content %}
-  <article class="max-w-4xl mx-auto">
-    <header class="mb-10">
-      <div class="mb-4">
-        <a href="{{ '/blog/' | url }}" class="text-primary hover:text-orange-400 font-mono text-xs flex items-center gap-1 uppercase tracking-wider no-underline">
-          <span class="material-symbols-outlined text-sm">arrow_back</span> All Posts
+  <article class="max-w-3xl mx-auto">
+    <header class="post-header mb-12">
+      <div class="mb-6">
+        <a href="{{ '/blog/' | url }}" class="text-blue-400 hover:text-blue-300 font-mono text-xs flex items-center gap-2 uppercase tracking-widest no-underline transition-colors">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+          All Posts
         </a>
       </div>
-      <h1 class="text-3xl md:text-5xl font-bold leading-tight mb-4 text-workbench-text-main tracking-tight">{{ title }}</h1>
+
+      <h1 class="font-serif italic text-3xl md:text-4xl leading-tight mb-4 text-white">{{ title }}</h1>
+
       {% if page.date %}
-        <div class="font-mono text-[11px] text-workbench-text-muted uppercase tracking-tighter mb-6">
+        <div class="font-mono text-[10px] text-blue-400/80 uppercase tracking-widest mb-8">
           {{ page.date | readableDate }}
         </div>
       {% endif %}
+
       {% if quote %}
-        <blockquote class="border-l-2 border-primary/30 pl-6 my-6">
-          <p class="text-workbench-text-muted italic leading-relaxed">{{ quote }}</p>
+        <div class="bg-white/[0.03] border border-white/[0.06] rounded-xl px-6 py-4 mb-8">
+          <p class="text-slate-400 italic leading-relaxed text-sm">{{ quote }}</p>
           {% if quoteAuthor %}
-            <p class="text-workbench-text-muted text-sm mt-2">&mdash; {{ quoteAuthor }}</p>
+            <p class="text-slate-500 text-xs mt-2">&mdash; {{ quoteAuthor }}</p>
           {% endif %}
-        </blockquote>
+        </div>
       {% endif %}
-      <div class="border-b border-workbench-border"></div>
+
+      <div class="h-px bg-white/[0.06]"></div>
     </header>
 
     <div class="article-content">
