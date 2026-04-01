@@ -96,6 +96,12 @@ Una frase in linguaggio naturale → nuovo indicatore + regola di monitoraggio +
 
 Questo è il potere di una Skill ben scritta: Claude non improvvisa. Segue il flusso, rispetta i vincoli, produce output strutturato.
 
+### Il Post Originale su Claude.ai
+
+Qui sotto trovate il post completo che ho pubblicato su ClaudeTrading, con tutti i dettagli tecnici e gli esempi di utilizzo:
+
+<iframe src="https://claude.site/public/artifacts/bac34737-7b0c-43e8-92cc-30eea5b57b0a/embed" title="ClaudeTrading - Skill per MetaTrader 5" width="100%" height="600" frameborder="0" allow="clipboard-write" allowfullscreen></iframe>
+
 ## Come Scrivere una Skill che Funziona
 
 Dopo aver costruito ClaudeTrading e averla testata a fondo, ho distillato alcune regole pratiche.
