@@ -8,9 +8,9 @@ quote: "Dimmi e dimenticherò, mostrami e forse ricorderò, coinvolgimi e compre
 quoteAuthor: "Benjamin Franklin"
 ---
 
-## Il Manuale di Istruzioni che Non Sapevi di Poter Scrivere
+## Il Manuale di Istruzioni
 
-Hai presente quando spieghi qualcosa a un collega nuovo? Le prime volte ripeti tutto: il contesto, le regole, le eccezioni. Poi a un certo punto gli scrivi un documento — non perché non ti fidi, ma perché quel documento è più affidabile della tua memoria alle otto di mattina.
+Hai presente quando spieghi qualcosa a un collega nuovo? Le prime volte ripeti tutto: il contesto, le regole, le eccezioni. Poi a un certo punto gli scrivi un documento — non perché non ti fidi, ma perché quel documento è più affidabile della tua memoria alle otto di mattina. Io scrivo sempre, non lo so se è una abitudine che ho preso per fare imprinting, per aiutarmi a ricordare: "documento di presa in carico", "minuta della riunione", "architecture decision record", "diagramma delle classi", "specifiche del progetto". La documentazione diventa obsoleta? Si. Meglio che niente? Certo.
 
 Una **Skill** in Claude Code è esattamente questo: un documento di istruzioni che trasforma Claude in un assistente specializzato per un dominio specifico. Non un prompt generico. Un manuale operativo strutturato che Claude segue ogni volta che riconosce il contesto giusto.
 
@@ -25,12 +25,13 @@ La differenza rispetto al `CLAUDE.md` è di scopo:
 - **CLAUDE.md** → istruzioni generali sul progetto (convenzioni, architettura, comandi)
 - **Skill** → istruzioni specializzate per un compito specifico (trading, deploy, analisi dati, testing)
 
-Il `CLAUDE.md` è il regolamento interno dell'azienda. La Skill è il manuale di reparto.
+Il `CLAUDE.md` è il regolamento interno dell'azienda, la Skill è il manuale di reparto.
 
 La struttura minima di una Skill è semplice:
 
 ```markdown
 # Nome della Skill
+ClaudeTrading
 
 ## Quando Attivarsi
 Descrivi il trigger: quando l'utente menziona X, Y o Z, attiva questa skill.
@@ -45,7 +46,7 @@ I passi che Claude deve seguire, in ordine.
 Cosa NON deve fare. Mai.
 ```
 
-Non serve magia. Serve chiarezza.
+Serve chiarezza.
 
 ## Il Caso Reale: ClaudeTrading
 
@@ -92,19 +93,14 @@ Una frase. Claude risponde implementando:
 }
 ```
 
-Una frase in linguaggio naturale → nuovo indicatore + regola di monitoraggio + configurazione JSON. Pronto per il `--dry-run` prima, per l'esecuzione reale dopo.
+Una frase in linguaggio naturale → nuovo indicatore + regola di monitoraggio + configurazione JSON.
+Il mio consiglio a questo punto è verificare il contenuto del json prodotto, nel mio caso ad esempio non avevo indicato timeframe e simbolo quindi ha utilizzato i default su EURUSD e H1. La conversazione può proseguire fino a perfezionare la configurazione. Pronto per il `--dry-run` prima, per l'esecuzione reale dopo.
 
 Questo è il potere di una Skill ben scritta: Claude non improvvisa. Segue il flusso, rispetta i vincoli, produce output strutturato.
 
-### Il Post Originale su Claude.ai
-
-Qui sotto trovate il post completo che ho pubblicato su ClaudeTrading, con tutti i dettagli tecnici e gli esempi di utilizzo:
-
-<iframe src="https://claude.site/public/artifacts/bac34737-7b0c-43e8-92cc-30eea5b57b0a/embed" title="ClaudeTrading - Skill per MetaTrader 5" width="100%" height="600" frameborder="0" allow="clipboard-write" allowfullscreen></iframe>
-
 ## Come Scrivere una Skill che Funziona
 
-Dopo aver costruito ClaudeTrading e averla testata a fondo, ho distillato alcune regole pratiche.
+Dopo aver preparato ClaudeTrading e averla testata a fondo, ho distillato alcune regole pratiche.
 
 ### 1. Sii Specifico sul Trigger
 
@@ -112,7 +108,7 @@ Non scrivere "quando l'utente chiede aiuto". Scrivi "quando l'utente menziona tr
 
 ### 2. Definisci un Flusso, Non una Lista di Funzioni
 
-La differenza tra una Skill mediocre e una buona è il **flusso decisionale**. Non elencare cosa Claude sa fare — descrivi l'ordine in cui deve farlo. "Prima analizza, poi verifica, poi calcola, poi mostra, poi chiedi conferma" è più potente di "può fare analisi, verifiche, calcoli".
+La differenza tra una Skill mediocre e una buona è il **flusso decisionale**. Non elencare cosa Claude sa fare — descrivi l'ordine in cui deve farlo. "Prima analizza, poi verifica, poi calcola, poi mostra, poi chiedi conferma" è più potente di "può fare analisi, verifiche, calcoli". Devi avere chiaro il tuo thinking flow, ciò che avresti fatto tu. *Se non sai che cosa fare nemmeno lui lo saprà*.
 
 ### 3. I Vincoli Negativi Sono i Più Importanti
 
@@ -120,11 +116,11 @@ Scrivi cosa Claude **non deve mai fare**. "Non eseguire automaticamente." "Non p
 
 ### 4. Usa un Formato Intermedio
 
-Nel caso di ClaudeTrading, il formato intermedio è JSON. Claude "pensa" in JSON, l'utente valida il JSON, il sistema esegue il JSON. Questa separazione è un'astrazione pulita: il linguaggio naturale entra, il formato strutturato esce, l'esecuzione è sempre sotto controllo umano.
+Nel caso di ClaudeTrading, il formato intermedio è JSON. Claude "pensa" in JSON, l'utente valida il JSON, il sistema esegue il JSON. Questa separazione è un'astrazione pulita: il linguaggio naturale entra, il formato strutturato esce, l'esecuzione è sempre sotto controllo umano. Il json nel nostro caso è un livello di comunicazione intermedio convenzionale e rende anche implicita la validazione, come ci fosse un guardrail.
 
 ### 5. Scrivi per il Caso Reale, Non per Quello Ideale
 
-La Skill deve gestire l'utente che scrive in italiano, quello che scrive in inglese, quello che dimentica di specificare il simbolo, quello che chiede qualcosa di ambiguo. Non servono mille righe — serve anticipare i tre o quattro casi che capitano davvero.
+La Skill deve gestire l'utente che scrive in italiano, quello che scrive in inglese, quello che dimentica di specificare il simbolo, quello che chiede qualcosa di ambiguo. Non servono mille righe — serve anticipare i tre o quattro casi che capitano davvero e iterare a perfezionarne le specifiche man mano che si rilevano edge case.
 
 ## SKILL-CREATOR: Testare e Fare Benchmark
 
@@ -178,6 +174,12 @@ Se vuoi provare, il percorso più breve è questo:
 Non serve che sia perfetta. Serve che sia chiara.
 
 Il repository di ClaudeTrading è su GitHub: [github.com/MichelePolo/ClaudeTrading](https://github.com/MichelePolo/ClaudeTrading). Può servire come riferimento concreto per la struttura di una Skill reale.
+
+## Il Post Originale su Claude.ai
+
+Qui sotto trovate il post completo che ho pubblicato su [ClaudeTrading](https://claude.ai/public/artifacts/bac34737-7b0c-43e8-92cc-30eea5b57b0a), con tutti i dettagli tecnici e gli esempi di utilizzo:
+
+<iframe src="https://claude.site/public/artifacts/bac34737-7b0c-43e8-92cc-30eea5b57b0a/embed" title="Claude Artifact" width="100%" height="600" frameborder="0" allow="clipboard-write" allowfullscreen></iframe>
 
 Nel prossimo post della serie parleremo di **Hooks** — l'altro strumento che cambia radicalmente il modo in cui Claude Code lavora nel tuo progetto.
 
