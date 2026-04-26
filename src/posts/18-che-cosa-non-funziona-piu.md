@@ -145,7 +145,7 @@ Ora devi conoscere la tua azienda, i tuoi dati, i processi di raccolta dei requi
 
 Non basta più saper costruire. Bisogna saper distinguere, prima ancora, ciò che merita davvero di essere costruito.
 
-**Il fiuto del senior non è morto. È diventato l'unica cosa che conta davvero ma solo se poggia su solide competenze.** Tutto ciò che è ambiguo diventa rumore, tutto ciò che è chiaro diventa risultato.
+**Il fiuto del senior non è morto. È diventato l'unica cosa che conta davvero ma solo se poggia su solide competenze.** Tutto ciò che è ambiguo diventa rumore, tutto ciò che è chiaro si amplifica nel risultato.
 
 ---
 
