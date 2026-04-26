@@ -56,17 +56,17 @@ Un LLM genera ciò che è statisticamente plausibile, non ciò che è giusto. Se
 
 ***
 
-## Tre Esempi Concreti
+## Un paio di Esempi
 
 Prendiamo una richiesta commerciale qualsiasi, di quelle che arrivano vaghe e apparentemente innocue:
 
-> "Serve una dashboard per monitorare le anomalie."
+> "Serve una dashboard per monitorare le email inviate."
 
-Prima questa frase poteva sopravvivere giorni o settimane. Durante l'analisi qualcuno avrebbe chiesto chiarimenti. Durante la progettazione qualcuno avrebbe scoperto che "anomalia" significava tre cose diverse a seconda del reparto. Durante lo sviluppo il team avrebbe visto che mancavano i dati, che i filtri erano incoerenti, che la metrica non era realmente calcolabile.
+Prima questa frase poteva sopravvivere giorni o settimane. Durante l'analisi qualcuno avrebbe chiesto chiarimenti. Durante la progettazione qualcuno avrebbe scoperto che "quelle mail" non le mandiamo noi. Durante lo sviluppo il team avrebbe visto che mancavano i dati, che i filtri erano incoerenti, che nulla era realmente calcolabile.
 
 Con l'IA, se parti male, parti subito male.
 
-Puoi far generare una dashboard in poche ore. Ma se non hai chiarito cosa sia davvero un'anomalia, ti ritrovi con un'interfaccia elegante che misura la cosa sbagliata. Pixel perfetti, semantica nulla.
+Puoi far generare una dashboard in poche ore. Ma se non hai chiarito chi sia davvero l'owner dei processi, ti ritrovi con un'interfaccia elegante vuota o peggio ancora che mostra la cosa sbagliata.
 
 ---
 
@@ -80,7 +80,7 @@ Correggerlo dopo costa molto più che fermarsi prima e ragionare meglio.
 
 Terzo esempio, più vicino a chi gestisce: un PM chiede di "consegnare il progetto con due settimane di anticipo".
 
-Senza una vera analisi puoi ottenere subito una proposta, un mockup, un backlog popolato. Ma se non distingui tra raccolta requisiti, controlli di compliance, analisi, progettazione, sviluppo, monitoraggio, stai ottimizzando un processo che non hai capito.
+Senza una vera analisi puoi ottenere subito una proposta, un mockup, un backlog popolato. Ma se non distingui tra raccolta requisiti, controlli di compliance, analisi, progettazione, sviluppo, test, rilascio, monitoraggio, stai ottimizzando un processo che non hai capito.
 
 L'IA non perdona questa approssimazione. La amplifica.
 
@@ -90,13 +90,9 @@ L'IA non perdona questa approssimazione. La amplifica.
 
 Il punto non è che prima si lavorasse meglio. Il punto è che prima c'era più **attrito** tra idea e risultato.
 
-Quell'attrito era lento, a volte frustrante, ma aveva una funzione. Ti dava tempo di capire che stavi sbagliando. Ti dava i giorni di silenzio in cui un dubbio diventava una domanda, e una domanda diventava una correzione.
+Quell'attrito era lento, a volte frustrante, ma aveva una funzione. Ti dava tempo di capire cosa stavi sbagliando. Ti dava i giorni di silenzio in cui un dubbio diventava una domanda, e una domanda diventava una correzione.
 
-Oggi l'attrito si è ridotto. E quando l'attrito si riduce, il vizio della superficialità diventa più visibile.
-
-È lo stesso meccanismo che ho descritto in ["Non Mandare un Robot in Palestra"](/Journey/posts/13-non-mandare-un-robot-in-palestra/): se deleghi alla macchina il lavoro cognitivo, il muscolo non cresce. La differenza è che lì parlavo di apprendimento personale. Qui parlo di output professionale.
-
-Stesso principio. Effetti diversi. Entrambi più visibili di prima.
+Oggi l'attrito si è ridotto. E quando l'attrito si riduce, il vizio della superficialità diventa più visibile e immediatamente.
 
 ***
 
@@ -113,7 +109,7 @@ Bisogna progettare meglio prima di scrivere. Bisogna saper fare le domande giust
 
 Sono quattro cose diverse. Una buona Skill — di quelle di cui ho parlato nel [post sulle Skill](/Journey/posts/17-come-creare-una-skill/) — può aiutarti a ricordartelo. Un buon `CLAUDE.md` può forzare il flusso. Ma nessuno strumento decide al posto tuo cosa stai cercando.
 
-L'IA sa accelerare. Non sa scegliere il problema giusto.
+L'IA sa accelerare. Non sa scegliere il problema giusto né la sua soluzione.
 
 ***
 
@@ -143,17 +139,13 @@ Diventa:
 
 **"Che cosa non funziona più, se lascio fare tutto in fretta all'IA?"**
 
-Che cosa non funziona più nella raccolta requisiti, nella progettazione, nella verifica, nel monitoraggio, nella manutenzione?
-
-Che cosa non funziona più quando ci accontentiamo di una soluzione che sembra giusta?
-
-Che cosa non funziona più quando confondiamo velocità con maturità?
+Ora devi conoscere la tua azienda, i tuoi dati, i processi di raccolta dei requisiti, di analisi, di progettazione e sviluppo. 
 
 È qui che cambia il mestiere.
 
 Non basta più saper costruire. Bisogna saper distinguere, prima ancora, ciò che merita davvero di essere costruito.
 
-**Il fiuto del senior non è morto. È diventato l'unica cosa che conta davvero.**
+**Il fiuto del senior non è morto. È diventato l'unica cosa che conta davvero ma solo se poggia su solide competenze.** Tutto ciò che è ambiguo diventa rumore, tutto ciò che è chiaro diventa risultato.
 
 ---
 
