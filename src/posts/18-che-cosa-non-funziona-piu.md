@@ -78,7 +78,7 @@ Correggerlo dopo costa molto più che fermarsi prima e ragionare meglio.
 
 ---
 
-Terzo esempio, più vicino a chi gestisce: un PM chiede di "consegnare il progetto con due settimane di anticipo".
+Terzo esempio, più vicino a chi gestisce: un PM chiede di "stimare il progetto entro domani".
 
 Senza una vera analisi puoi ottenere subito una proposta, un mockup, un backlog popolato. Ma se non distingui tra raccolta requisiti, controlli di compliance, analisi, progettazione, sviluppo, test, rilascio, monitoraggio, stai ottimizzando un processo che non hai capito.
 
