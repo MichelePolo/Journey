@@ -70,7 +70,7 @@ Puoi far generare una dashboard in poche ore. Ma se non hai chiarito chi sia dav
 
 ---
 
-Secondo esempio: i performance test su un'API.
+> Secondo esempio: i performance test su un'API.
 
 Se non definisci bene l'obiettivo, l'infrastruttura, la tipologia di test, l'IA produce un workspace di default. Non si tara sulla tua infrastruttura. Non distingue tra carico nominale e picchi. E poi scopri che il caso più raro — quello che succede una volta ogni mille — era esattamente quello che contava testare.
 
@@ -78,7 +78,7 @@ Correggerlo dopo costa molto più che fermarsi prima e ragionare meglio.
 
 ---
 
-Terzo esempio, più vicino a chi gestisce: un PM chiede di "stimare il progetto entro domani".
+> Terzo esempio, più vicino a chi gestisce: un PM chiede di "stimare il progetto entro domani".
 
 Senza una vera analisi puoi ottenere subito una proposta, un mockup, un backlog popolato. Ma se non distingui tra raccolta requisiti, controlli di compliance, analisi, progettazione, sviluppo, test, rilascio, monitoraggio, stai ottimizzando un processo che non hai capito.
 
