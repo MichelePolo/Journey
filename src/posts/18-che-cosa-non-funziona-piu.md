@@ -52,7 +52,7 @@ Il moltiplicatore IA prende la tua intuizione e la trasforma subito in output. S
 
 Non hai più il lusso dell'errore lento.
 
-E nel post sul [dado pesato](/Journey/posts/14-il-dado-pesato/) ho spiegato perché: l'LLM genera ciò che è statisticamente plausibile, non ciò che è giusto. Se gli dai un input ambiguo, ti restituisce un output ambiguo confezionato in modo convincente. Garbage In, *Confident* Garbage Out.
+Un LLM genera ciò che è statisticamente plausibile, non ciò che è giusto. Se gli dai un input ambiguo, ti restituisce un output ambiguo confezionato in modo convincente. Garbage In, *Confident* Garbage Out.
 
 ***
 
