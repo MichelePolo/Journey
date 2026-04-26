@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 tags: [post]
 title: "Che Cosa Non Funziona Più"
-subtitle: "L'IA non ha creato la mediocrità. L'ha resa immediatamente visibile."
+subtitle: "L'IA non genera valore né mediocrità. Li rende immediatamente visibili."
 date: 2026-04-22
 quote: "Non c'è nulla di così inutile come fare con grande efficienza ciò che non dovrebbe essere fatto affatto."
 quoteAuthor: "Peter Drucker"
