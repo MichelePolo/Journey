@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-tags: [post]
+tags: [post, ai, internals]
 title: "L'Evoluzione della Qualità RAG: Documenti vs Codice Sorgente"
 subtitle: "Come l'ingestion del codice richiede strategie diverse dai documenti tradizionali"
 date: 2025-01-31

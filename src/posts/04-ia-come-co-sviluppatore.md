@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-tags: [post]
+tags: [post, codin, ai, philosophy]
 title: "L'Intelligenza Artificiale come Co-Sviluppatore: Una Partnership Simbiotica"
 subtitle: "L'intelligenza artificiale come partner nello sviluppo software"
 date: 2025-01-04

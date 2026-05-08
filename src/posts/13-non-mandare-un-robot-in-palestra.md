@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-tags: [post]
+tags: [post, ai, philosophy]
 title: "Non Mandare un Robot in Palestra"
 subtitle: "Perché uso l'AI per quasi tutto, ma non per prendere appunti"
 date: 2026-02-28

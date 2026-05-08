@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-tags: [post]
+tags: [post, codin, engineering, architecture]
 title: "Dall'Idea al Codice: Analisi, Progettazione e Architettura Software"
 subtitle: "Dalle fondamenta all'architettura: progettare per durare"
 date: 2025-01-03

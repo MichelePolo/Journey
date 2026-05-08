@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-tags: [post]
+tags: [post, codin, engineering, internals]
 title: "AST, Tree-sitter e l'Arte di Comprendere il Codice"
 subtitle: "Come Tree-sitter abilita l'analisi semantica del codice"
 date: 2025-01-05

@@ -184,3 +184,81 @@ body {
   border-radius: 0.75rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
+
+/* ─── Tag Badges ─────────────────────────────────────────────── */
+.tag-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.65rem;
+  border-radius: 9999px;
+  font-size: 0.68rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-weight: 500;
+  letter-spacing: 0.07em;
+  text-transform: lowercase;
+  border: 1px solid currentColor;
+  opacity: 0.75;
+  transition: opacity 0.2s, filter 0.2s;
+  cursor: default;
+  text-decoration: none;
+}
+a.tag-badge { cursor: pointer; }
+a.tag-badge:hover { opacity: 1; }
+
+.tag-ai          { color: #60a5fa; border-color: rgba(96, 165, 250, 0.35); background: rgba(96, 165, 250, 0.08); }
+.tag-philosophy  { color: #c084fc; border-color: rgba(192, 132, 252, 0.35); background: rgba(192, 132, 252, 0.08); }
+.tag-engineering { color: #34d399; border-color: rgba(52, 211, 153, 0.35); background: rgba(52, 211, 153, 0.08); }
+.tag-internals   { color: #fb923c; border-color: rgba(251, 146, 60, 0.35); background: rgba(251, 146, 60, 0.08); }
+.tag-architecture{ color: #38bdf8; border-color: rgba(56, 189, 248, 0.35); background: rgba(56, 189, 248, 0.08); }
+.tag-vision      { color: #f472b6; border-color: rgba(244, 114, 182, 0.35); background: rgba(244, 114, 182, 0.08); }
+.tag-agile       { color: #a3e635; border-color: rgba(163, 230, 53, 0.35); background: rgba(163, 230, 53, 0.08); }
+.tag-devops      { color: #fbbf24; border-color: rgba(251, 191, 36, 0.35); background: rgba(251, 191, 36, 0.08); }
+.tag-private     { color: #f87171; border-color: rgba(248, 113, 113, 0.35); background: rgba(248, 113, 113, 0.08); }
+.tag-default     { color: #94a3b8; border-color: rgba(148, 163, 184, 0.35); background: rgba(148, 163, 184, 0.08); }
+
+/* ─── Tag Cloud Pills ────────────────────────────────────────── */
+.tag-cloud-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.15rem;
+  padding: 0.35rem 0.9rem;
+  border-radius: 9999px;
+  font-size: 0.78rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  border: 1px solid currentColor;
+  opacity: 0.6;
+  transition: opacity 0.2s ease, transform 0.2s ease, background 0.2s ease;
+  cursor: pointer;
+}
+.tag-cloud-pill:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+.tag-cloud-hash {
+  opacity: 0.5;
+  margin-right: 0.05rem;
+  font-size: 0.72rem;
+}
+
+/* Active pill — filled solid, white text */
+.tag-cloud-pill--active {
+  opacity: 1;
+  color: #fff !important;
+  border-color: transparent !important;
+}
+.tag-cloud-pill--active.tag-ai          { background: #3b82f6; }
+.tag-cloud-pill--active.tag-philosophy  { background: #a855f7; }
+.tag-cloud-pill--active.tag-engineering { background: #10b981; }
+.tag-cloud-pill--active.tag-internals   { background: #f97316; }
+.tag-cloud-pill--active.tag-architecture{ background: #0ea5e9; }
+.tag-cloud-pill--active.tag-vision      { background: #ec4899; }
+.tag-cloud-pill--active.tag-agile       { background: #84cc16; }
+.tag-cloud-pill--active.tag-devops      { background: #f59e0b; }
+.tag-cloud-pill--active.tag-private     { background: #ef4444; }
+.tag-cloud-pill--active.tag-default     { background: #64748b; }
+
+
+
+

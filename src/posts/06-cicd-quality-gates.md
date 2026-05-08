@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-tags: [post]
+tags: [post, codin, engineering, devops]
 title: "CI/CD, Pre-Commit Hooks e Quality Gates: La Guardia della Qualità"
 subtitle: "Automazione, testing e qualità continua"
 date: 2025-01-06

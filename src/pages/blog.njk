@@ -5,11 +5,24 @@ permalink: "blog/"
 ---
 
 <div>
-  <div class="mb-16">
+  <div class="mb-10">
     <h1 class="text-5xl md:text-7xl font-serif italic text-white mb-6">Archivio Post</h1>
     <p class="text-lg text-slate-400 max-w-2xl leading-relaxed">
       Una raccolta di pensieri su sistemi distribuiti, intelligenza artificiale e il panorama in evoluzione dell'architettura software.
     </p>
+  </div>
+
+  {# Tag Cloud #}
+  <div class="mb-14">
+    <p class="text-sm font-mono uppercase tracking-widest text-slate-500 mb-4">Esplora per argomento</p>
+    <div class="flex flex-wrap gap-3">
+      {% for tag in collections.tagList %}
+        <a href="{{ ('/tags/' + tag + '/') | url }}"
+           class="tag-cloud-pill {{ tag | tagColor }} no-underline">
+          <span class="tag-cloud-hash">#</span>{{ tag }}
+        </a>
+      {% endfor %}
+    </div>
   </div>
 
   <div class="flex flex-col">
@@ -27,6 +40,14 @@ permalink: "blog/"
               <p class="text-lg text-slate-400 max-w-2xl leading-relaxed">
                 {{ post.data.subtitle }}
               </p>
+            {% endif %}
+            {% set visibleTags = post.data.tags | displayTags %}
+            {% if visibleTags.length > 0 %}
+              <div class="flex flex-wrap gap-2 mt-2">
+                {% for tag in visibleTags %}
+                  <span class="tag-badge {{ tag | tagColor }}">{{ tag }}</span>
+                {% endfor %}
+              </div>
             {% endif %}
           </div>
           <div class="flex items-center group-hover:translate-x-2 transition-transform duration-300">

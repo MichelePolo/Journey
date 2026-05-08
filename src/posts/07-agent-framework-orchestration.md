@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-tags: [post]
+tags: [post, codin, ai, architecture]
 title: "Agent Framework: Architettura per la Delega Intelligente"
 subtitle: "Architettura multi-agente per sistemi di code intelligence"
 date: 2025-01-07

@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-tags: [post]
+tags: [post, ai, philosophy]
 title: "L'Arte di Dimenticare"
 subtitle: "Costruire la memoria di un agente AI è un esercizio borgesiano."
 date: 2026-05-04

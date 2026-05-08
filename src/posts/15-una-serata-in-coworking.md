@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-tags: [post]
+tags: [post, philosophy, vision]
 title: "Una Serata in Coworking"
 subtitle: "Tra il mondo dei sogni e quello reale, non sono riuscito a scegliere da che parte stare"
 date: 2026-03-21

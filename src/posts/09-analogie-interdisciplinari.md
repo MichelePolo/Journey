@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-tags: [post]
+tags: [post, philosophy, vision]
 title: "Imparare dai Giganti: Analogie Interdisciplinari nello Sviluppo Software"
 subtitle: "Come architettura, medicina, filosofia e vita quotidiana insegnano a programmare meglio"
 date: 2025-01-17

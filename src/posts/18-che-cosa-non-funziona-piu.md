@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-tags: [post]
+tags: [post, ai, philosophy]
 title: "Che Cosa Non Funziona Più"
 subtitle: "L'IA non genera valore né mediocrità. Li rende immediatamente visibili."
 date: 2026-04-22

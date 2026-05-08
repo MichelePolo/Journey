@@ -13,9 +13,22 @@
       <h1 class="font-serif italic text-3xl md:text-4xl leading-tight mb-4 text-white">{{ title }}</h1>
 
       {% if page.date %}
-        <div class="font-mono text-[10px] text-blue-400/80 uppercase tracking-widest mb-8">
+        <div class="font-mono text-[10px] text-blue-400/80 uppercase tracking-widest mb-4">
           {{ page.date | readableDate }}
         </div>
+      {% endif %}
+
+      {% set visibleTags = tags | displayTags %}
+      {% if visibleTags.length > 0 %}
+        <div class="flex flex-wrap gap-2 mb-8">
+          {% for tag in visibleTags %}
+            <a href="{{ ('/tags/' + tag + '/') | url }}" class="tag-badge {{ tag | tagColor }} no-underline hover:brightness-125 transition-all">
+              {{ tag }}
+            </a>
+          {% endfor %}
+        </div>
+      {% else %}
+        <div class="mb-8"></div>
       {% endif %}
 
       {% if quote %}

@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-tags: [post]
+tags: [post, codin, philosophy, engineering]
 title: "Documentazione come Filosofia: Sprint, Retrospettive e Memoria Collettiva"
 subtitle: "Documentare per comunicare, non per obbligo"
 date: 2025-01-08

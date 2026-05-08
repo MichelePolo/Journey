@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-tags: [post]
+tags: [post, engineering, internals]
 title: "Come Creare una Skill per Claude Code"
 subtitle: "Insegnare un mestiere a chi impara in fretta"
 date: 2026-04-01

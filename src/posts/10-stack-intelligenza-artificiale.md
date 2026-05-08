@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-tags: [post]
+tags: [post, ai, engineering]
 title: "Lo Stack dell'Intelligenza Artificiale Applicata"
 subtitle: "Embeddings, Vector Database, RAG e LLM: l'architettura che alimenta l'IA moderna"
 date: 2025-01-23

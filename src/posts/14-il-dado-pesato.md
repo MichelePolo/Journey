@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-tags: [post]
+tags: [post, ai, internals]
 title: "Il Dado Pesato"
 subtitle: "Un LLM non pensa né capisce: genera il prossimo token lanciando un dado, miliardi di volte"
 date: 2026-03-04

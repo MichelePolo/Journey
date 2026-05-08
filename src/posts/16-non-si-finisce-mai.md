@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-tags: [post]
+tags: [post, ai, vision]
 title: "Si vola più lontano per il gusto di volare"
 subtitle: "Ho scoperto di saper volare e sono volato sul divano"
 date: 2026-03-27

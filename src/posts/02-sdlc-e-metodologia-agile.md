@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-tags: [post]
+tags: [post, codin, engineering, agile]
 title: "SDLC e Metodologia Agile: L'Arte di Costruire Software con Disciplina"
 subtitle: "Come gli sprint, GitFlow e i quality gate hanno guidato lo sviluppo"
 date: 2025-01-02

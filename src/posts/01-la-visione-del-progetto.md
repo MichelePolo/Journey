@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-tags: [post]
+tags: [post, codin, vision, philosophy]
 title: "La Visione del Progetto: Costruire Ponti tra Uomo e Codice"
 subtitle: "Perché CodeIntel System esiste e quale problema vuole risolvere"
 date: 2025-01-01

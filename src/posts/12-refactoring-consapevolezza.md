@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-tags: [post]
+tags: [post, ai, philosophy]
 title: "Non Puoi Delegare Ciò Che Non Sai Fare"
 subtitle: "Riflessioni su refactoring, modernizzazione e il ruolo dell'umano nell'era dell'IA"
 date: 2025-02-08
