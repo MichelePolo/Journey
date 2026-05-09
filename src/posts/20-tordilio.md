@@ -2,6 +2,7 @@
 layout: layouts/post.njk
 tags: [post, personale]
 title: "Tordilio"
+subtitle: "Chissà se quel ragazzo c'è ancora."
 date: 2026-05-08
 quote: "Niente fa bene all'interno di un uomo come l'esterno di un cavallo."
 quoteAuthor: "Winston Churchill"

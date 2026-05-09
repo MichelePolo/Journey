@@ -10,7 +10,7 @@
           <span class="text-gradient">Journey into AI</span>
         </h1>
         <p class="hero-item text-xl md:text-2xl text-slate-400 max-w-2xl font-light leading-relaxed mb-12">
-          Progetti per comprendere, documentare e analizzare codebase complesse con l'aiuto dell'intelligenza artificiale.
+          Appunti, riflessioni e qualche storia personale da chi scrive software nell'epoca dell'Intelligenza Artificiale.
         </p>
 
         <div class="hero-item flex flex-wrap gap-4">
@@ -69,6 +69,53 @@
         <p class="text-slate-400 leading-relaxed">Sperimentazione continua con le ultime tecnologie per costruire soluzioni robuste e scalabili.</p>
       </div>
     </div>
+
+    {# ─── Featured Post ──────────────────────────────────────── #}
+    <a href="{{ '/posts/09-analogie-interdisciplinari/' | url }}"
+       class="scroll-reveal group mt-10 flex flex-col md:flex-row glass border border-white/8 hover:border-indigo-400/30 rounded-3xl overflow-hidden transition-all duration-500 hover:bg-white/[0.07] hover:-translate-y-1 shadow-xl shadow-black/20 no-underline">
+
+      {# Left accent bar #}
+      <div class="hidden md:flex flex-col justify-center px-8 py-10 border-r border-white/5 min-w-[220px]">
+        <span class="text-xs font-mono uppercase tracking-widest text-indigo-400/80 mb-3">Post in evidenza</span>
+        <svg class="text-indigo-400/60 mb-4" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+        </svg>
+        <span class="text-xs text-slate-500 font-mono">17 gen 2025</span>
+      </div>
+
+      {# Content #}
+      <div class="flex-1 px-8 py-10 flex flex-col gap-5">
+        <div class="md:hidden">
+          <span class="text-xs font-mono uppercase tracking-widest text-indigo-400/80">Post in evidenza</span>
+        </div>
+        <div>
+          <h3 class="text-2xl md:text-3xl font-serif italic text-slate-100 group-hover:text-indigo-300 transition-colors leading-snug mb-2">
+            Imparare dai Giganti: Analogie Interdisciplinari nello Sviluppo Software
+          </h3>
+          <p class="text-slate-400 text-base leading-relaxed max-w-2xl">
+            Come architettura, medicina, filosofia e vita quotidiana insegnano a programmare meglio. Design Pattern dalla GoF, debugging come diagnostica medica, sezione aurea nelle UI, e molto altro.
+          </p>
+        </div>
+
+        {# Quote #}
+        <blockquote class="border-l-2 border-indigo-400/40 pl-5 text-slate-400 italic text-sm leading-relaxed">
+          "Se ho visto più lontano, è perché stavo sulle spalle di giganti"
+          <cite class="block not-italic text-slate-500 text-xs mt-1">— Bernardo di Chartres · Newton · Einstein</cite>
+        </blockquote>
+
+        {# Tags + CTA #}
+        <div class="flex items-center justify-between mt-auto pt-2">
+          <div class="flex gap-2">
+            <span class="tag-badge tag-ai-filosofia">ai-filosofia</span>
+          </div>
+          <span class="flex items-center gap-2 text-sm font-medium text-indigo-400 group-hover:text-indigo-300 transition-colors shrink-0">
+            Leggi il post
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </span>
+        </div>
+      </div>
+    </a>
+
   </section>
 
   {# Tag Cloud #}
@@ -93,9 +140,9 @@
     <div>
       <div class="scroll-reveal flex items-end justify-between mb-12">
         <div>
-          <span class="block text-xs font-mono uppercase tracking-widest text-pink-400/80 mb-3">Voce 1</span>
-          <h2 class="text-4xl md:text-5xl font-serif italic mb-4">Note dal mestiere</h2>
-          <p class="text-slate-400 text-lg max-w-2xl">Riflessioni a caldo su come l'IA cambia il modo di scrivere software, di studiare, di lavorare. Saggi brevi, episodi, intuizioni dal mestiere quotidiano.</p>
+          <span class="block text-xs font-mono uppercase tracking-widest text-pink-400/80 mb-3" style="display:none">Voce 1</span>
+          <h2 class="text-4xl md:text-5xl font-serif italic mb-4">Post recenti</h2>
+
         </div>
         <a href="{{ '/blog/' | url }}" class="hidden md:flex items-center gap-2 text-sm font-medium text-slate-400 hover:text-white transition-colors no-underline shrink-0">
           Tutti i post
@@ -105,7 +152,7 @@
 
       <div class="grid grid-cols-1 gap-6">
         {% for post in collections.noteDalMestiere %}
-          {% if loop.index <= 4 %}
+          {% if loop.index <= 3 %}
             <a href="{{ post.url | url }}" class="scroll-reveal group glass p-8 rounded-3xl flex flex-col md:flex-row md:items-center justify-between gap-6 transition-all duration-300 border border-white/5 hover:border-white/10 hover:translate-x-2 hover:bg-white/[0.08] no-underline">
               <div class="max-w-2xl">
                 <span class="text-xs font-mono text-pink-400/80 uppercase tracking-widest mb-3 block">
@@ -140,9 +187,9 @@
     <div>
       <div class="scroll-reveal flex items-end justify-between mb-12">
         <div>
-          <span class="block text-xs font-mono uppercase tracking-widest text-sky-400/80 mb-3">Voce 2 · Serie</span>
+
           <h2 class="text-4xl md:text-5xl font-serif italic mb-4">Serie CodeIntel</h2>
-          <p class="text-slate-400 text-lg max-w-2xl">Otto post, in ordine di lettura, che raccontano l'architettura, il processo e le scelte tecniche dietro CodeIntel System: dalla visione iniziale al framework multi-agente.</p>
+
         </div>
       </div>
 
