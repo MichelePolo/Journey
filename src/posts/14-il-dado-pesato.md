@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-tags: [post, ai, internals]
+tags: [post, ai-pratica]
 title: "Il Dado Pesato"
 subtitle: "Un LLM non pensa né capisce: genera il prossimo token lanciando un dado, miliardi di volte"
 date: 2026-03-04
@@ -176,21 +176,3 @@ Non è una critica. È una caratteristica. Un coltello non è peggio di un bistu
 **Un LLM genera testo probabile. Nient'altro, ma nemmeno qualcosa di meno.**
 
 Ogni parola che produce è il risultato di un dado pesato. Quel dado è straordinario — pesa meglio di qualsiasi strumento che abbiamo mai costruito. Ma resta un dado, e va usato sapendolo.
-
----
-
-**Serie "CodeIntel System: Dal Concetto al Codice"**
-- Post 1: [La Visione del Progetto](/Journey/posts/01-la-visione-del-progetto/)
-- Post 2: [SDLC e Metodologia Agile](/Journey/posts/02-sdlc-e-metodologia-agile/)
-- Post 3: [Analisi, Progettazione e Architettura](/Journey/posts/03-analisi-progettazione-architettura/)
-- Post 4: [L'IA come Co-Sviluppatore](/Journey/posts/04-ia-come-co-sviluppatore/)
-- Post 5: [AST, Tree-sitter e Parsing del Codice](/Journey/posts/05-ast-treesitter-parsing/)
-- Post 6: [CI/CD e Quality Gates](/Journey/posts/06-cicd-quality-gates/)
-- Post 7: [Agent Framework e Orchestrazione](/Journey/posts/07-agent-framework-orchestration/)
-- Post 8: [Documentazione come Filosofia](/Journey/posts/08-documentazione-come-filosofia/)
-- Post 9: [Imparare dai Giganti: Analogie Interdisciplinari](/Journey/posts/09-analogie-interdisciplinari/)
-- Post 10: [Lo Stack dell'Intelligenza Artificiale Applicata](/Journey/posts/10-stack-intelligenza-artificiale/)
-- Post 11: [L'Evoluzione della Qualità RAG](/Journey/posts/11-rag-quality-evolution/)
-- Post 12: [Non Puoi Delegare Ciò Che Non Sai Fare](/Journey/posts/12-refactoring-consapevolezza/)
-- Post 13: [Non Mandare un Robot in Palestra](/Journey/posts/13-non-mandare-un-robot-in-palestra/)
-- **Post 14**: Il Dado Pesato ← *Sei qui*

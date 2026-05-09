@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-tags: [post, philosophy, vision]
+tags: [post, personale]
 title: "Una Serata in Coworking"
 subtitle: "Tra il mondo dei sogni e quello reale, non sono riuscito a scegliere da che parte stare"
 date: 2026-03-21
@@ -69,22 +69,3 @@ Il sistema Italia non cambierà dall'esterno, per decreto o per denuncia. Cambia
 Quella sera a Verona, in uno spazio franco dove le persone si guardavano in faccia, ho capito una cosa sola con certezza: l'urgenza vera non è scrivere codice. È costruire.
 
 **Il resto può aspettare. Anzi, il resto può aspettare per sempre.**
-
----
-
-**Serie "CodeIntel System: Dal Concetto al Codice"**
-- Post 1: [La Visione del Progetto](/Journey/posts/01-la-visione-del-progetto/)
-- Post 2: [SDLC e Metodologia Agile](/Journey/posts/02-sdlc-e-metodologia-agile/)
-- Post 3: [Analisi, Progettazione e Architettura](/Journey/posts/03-analisi-progettazione-architettura/)
-- Post 4: [L'IA come Co-Sviluppatore](/Journey/posts/04-ia-come-co-sviluppatore/)
-- Post 5: [AST, Tree-sitter e Parsing del Codice](/Journey/posts/05-ast-treesitter-parsing/)
-- Post 6: [CI/CD e Quality Gates](/Journey/posts/06-cicd-quality-gates/)
-- Post 7: [Agent Framework e Orchestrazione](/Journey/posts/07-agent-framework-orchestration/)
-- Post 8: [Documentazione come Filosofia](/Journey/posts/08-documentazione-come-filosofia/)
-- Post 9: [Imparare dai Giganti: Analogie Interdisciplinari](/Journey/posts/09-analogie-interdisciplinari/)
-- Post 10: [Lo Stack dell'Intelligenza Artificiale Applicata](/Journey/posts/10-stack-intelligenza-artificiale/)
-- Post 11: [L'Evoluzione della Qualità RAG](/Journey/posts/11-rag-quality-evolution/)
-- Post 12: [Non Puoi Delegare Ciò Che Non Sai Fare](/Journey/posts/12-refactoring-consapevolezza/)
-- Post 13: [Non Mandare un Robot in Palestra](/Journey/posts/13-non-mandare-un-robot-in-palestra/)
-- Post 14: [Il Dado Pesato](/Journey/posts/14-il-dado-pesato/)
-- **Post 15**: Una Serata in Coworking ← *Sei qui*

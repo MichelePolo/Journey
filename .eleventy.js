@@ -1,6 +1,9 @@
 module.exports = function (eleventyConfig) {
   // Tag di sistema da non mostrare come badge
-  const SYSTEM_TAGS = ["post", "codin"];
+  const SYSTEM_TAGS = ["post"];
+
+  // Tag riservato alla serie principale: serve per filtrare nelle due colonne della home
+  const SERIES_CODEINTEL_TAG = "serie-codeintel";
 
   // Filtro per ottenere solo i tag visibili (esclusi quelli di sistema)
   eleventyConfig.addFilter("displayTags", (tags) => {
@@ -11,15 +14,11 @@ module.exports = function (eleventyConfig) {
   // Filtro per assegnare un colore CSS a ogni tag
   eleventyConfig.addFilter("tagColor", (tag) => {
     const palette = {
-      ai:           "tag-ai",
-      philosophy:   "tag-philosophy",
-      engineering:  "tag-engineering",
-      internals:    "tag-internals",
-      architecture: "tag-architecture",
-      vision:       "tag-vision",
-      agile:        "tag-agile",
-      devops:       "tag-devops",
-      private:      "tag-private",
+      "serie-codeintel": "tag-serie-codeintel",
+      "ai-pratica":      "tag-ai-pratica",
+      "ai-filosofia":    "tag-ai-filosofia",
+      "tutorial":        "tag-tutorial",
+      "personale":       "tag-personale",
     };
     return palette[tag] || "tag-default";
   });
@@ -54,6 +53,20 @@ module.exports = function (eleventyConfig) {
     return collectionApi.getFilteredByTag("post").sort((a, b) => {
       return b.date - a.date;
     });
+  });
+
+  // Collection: solo post della serie CodeIntel (ordinati cronologicamente)
+  eleventyConfig.addCollection("serieCodeintel", function(collectionApi) {
+    return collectionApi.getFilteredByTag("post")
+      .filter(p => (p.data.tags || []).includes(SERIES_CODEINTEL_TAG))
+      .sort((a, b) => a.date - b.date);
+  });
+
+  // Collection: tutti gli altri post (note dal mestiere), più recenti prima
+  eleventyConfig.addCollection("noteDalMestiere", function(collectionApi) {
+    return collectionApi.getFilteredByTag("post")
+      .filter(p => !(p.data.tags || []).includes(SERIES_CODEINTEL_TAG))
+      .sort((a, b) => b.date - a.date);
   });
 
   // Collection per ogni singolo tag — usata per le pagine /tags/<tag>/

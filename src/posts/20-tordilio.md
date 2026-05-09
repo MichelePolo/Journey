@@ -1,10 +1,22 @@
 ---
 layout: layouts/post.njk
-tags: [post, private]
+tags: [post, personale]
 title: "Tordilio"
 date: 2026-05-08
 quote: "Niente fa bene all'interno di un uomo come l'esterno di un cavallo."
 quoteAuthor: "Winston Churchill"
+---
+
+Parlando di memoria!
+
+Durante un corso per manager abbiamo svolto l'esercizio dell'elevator pitch. Si tratta di presentarsi a un pubblico per pochi minuti cercando di essere persuasivi.
+Un collega è rimasto stupito perché: *"Tu non parli così! Usi sempre un linguaggio molto tecnico"*.
+
+A volte il contesto è tecnico e vanno serrati i ranghi, ma se c'è l'occasione di lasciarsi andare non è male far uscire qualcosa di sé, ci rende esseri umani.
+
+Facendo pulizia nella memoria, liberando spazio su Google Drive, ho rinvenuto questo post dal mio primissimo blog.
+Scritto il 20 giugno 2005 da un ragazzo di 26 anni da solo in Brasile, chissà se quel ragazzo c'è ancora.
+
 ---
 
 *Viamao, 20/06/2005*

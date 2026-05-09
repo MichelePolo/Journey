@@ -1,9 +1,11 @@
 ---
 layout: layouts/post.njk
-tags: [post, ai, philosophy]
+tags: [post, ai-pratica]
 title: "L'Arte di Dimenticare"
 subtitle: "Costruire la memoria di un agente AI è un esercizio borgesiano."
 date: 2026-05-04
+quote: "Pensare è dimenticare le differenze, è generalizzare, astrarre."
+quoteAuthor: "Jorge Luis Borges, Funes el memorioso"
 ---
 
 Borges, nel 1942, immaginò un uomo che dopo una caduta da cavallo non riuscì più a dimenticare nulla.

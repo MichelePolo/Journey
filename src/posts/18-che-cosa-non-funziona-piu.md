@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-tags: [post, ai, philosophy]
+tags: [post, ai-filosofia]
 title: "Che Cosa Non Funziona Più"
 subtitle: "L'IA non genera valore né mediocrità. Li rende immediatamente visibili."
 date: 2026-04-22
@@ -146,25 +146,3 @@ Ora devi conoscere la tua azienda, i tuoi dati, i processi di raccolta dei requi
 Non basta più saper costruire. Bisogna saper distinguere, prima ancora, ciò che merita davvero di essere costruito.
 
 **Il fiuto del senior non è morto. È diventato l'unica cosa che conta davvero ma solo se poggia su solide competenze.** Tutto ciò che è ambiguo diventa rumore, tutto ciò che è chiaro si amplifica nel risultato.
-
----
-
-**Serie "CodeIntel System: Dal Concetto al Codice"**
-- Post 1: [La Visione del Progetto](/Journey/posts/01-la-visione-del-progetto/)
-- Post 2: [SDLC e Metodologia Agile](/Journey/posts/02-sdlc-e-metodologia-agile/)
-- Post 3: [Analisi, Progettazione e Architettura](/Journey/posts/03-analisi-progettazione-architettura/)
-- Post 4: [L'IA come Co-Sviluppatore](/Journey/posts/04-ia-come-co-sviluppatore/)
-- Post 5: [AST, Tree-sitter e Parsing del Codice](/Journey/posts/05-ast-treesitter-parsing/)
-- Post 6: [CI/CD e Quality Gates](/Journey/posts/06-cicd-quality-gates/)
-- Post 7: [Agent Framework e Orchestrazione](/Journey/posts/07-agent-framework-orchestration/)
-- Post 8: [Documentazione come Filosofia](/Journey/posts/08-documentazione-come-filosofia/)
-- Post 9: [Imparare dai Giganti: Analogie Interdisciplinari](/Journey/posts/09-analogie-interdisciplinari/)
-- Post 10: [Lo Stack dell'Intelligenza Artificiale Applicata](/Journey/posts/10-stack-intelligenza-artificiale/)
-- Post 11: [L'Evoluzione della Qualità RAG](/Journey/posts/11-rag-quality-evolution/)
-- Post 12: [Non Puoi Delegare Ciò Che Non Sai Fare](/Journey/posts/12-refactoring-consapevolezza/)
-- Post 13: [Non Mandare un Robot in Palestra](/Journey/posts/13-non-mandare-un-robot-in-palestra/)
-- Post 14: [Il Dado Pesato](/Journey/posts/14-il-dado-pesato/)
-- Post 15: [Una Serata in Coworking](/Journey/posts/15-una-serata-in-coworking/)
-- Post 16: [Si Vola Più Lontano per il Gusto di Volare](/Journey/posts/16-non-si-finisce-mai/)
-- Post 17: [Come Creare una Skill per Claude Code](/Journey/posts/17-come-creare-una-skill/)
-- **Post 18**: Che Cosa Non Funziona Più ← *Sei qui*

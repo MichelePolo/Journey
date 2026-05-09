@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-tags: [post, engineering, internals]
+tags: [post, tutorial]
 title: "Come Creare una Skill per Claude Code"
 subtitle: "Insegnare un mestiere a chi impara in fretta"
 date: 2026-04-01
@@ -181,9 +181,4 @@ Qui sotto trovate il post completo che ho pubblicato su [ClaudeTrading](https://
 
 <iframe src="https://claude.site/public/artifacts/bac34737-7b0c-43e8-92cc-30eea5b57b0a/embed" title="Claude Artifact" width="100%" height="600" frameborder="0" allow="clipboard-write" allowfullscreen></iframe>
 
-Nel prossimo post della serie parleremo di **Hooks** — l'altro strumento che cambia radicalmente il modo in cui Claude Code lavora nel tuo progetto.
-
----
-
-**Serie "Come Utilizzare Claude Code"**
-- **Post 1**: Come Creare una Skill ← *Sei qui*
+Nel prossimo post di questa serie sui Claude Code parleremo di **Hooks** — l'altro strumento che cambia radicalmente il modo in cui Claude Code lavora nel tuo progetto.

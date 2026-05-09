@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-tags: [post, ai, philosophy]
+tags: [post, ai-filosofia]
 title: "Non Mandare un Robot in Palestra"
 subtitle: "Perché uso l'AI per quasi tutto, ma non per prendere appunti"
 date: 2026-02-28
@@ -122,20 +122,3 @@ Con gli appunti funziona allo stesso modo. La sintesi difficile — quella in cu
 Non uso l'AI per prendere appunti per la stessa ragione per cui non manderei un robot in palestra al posto mio: non perché non sia capace di farlo, ma perché il punto non è il risultato. È la trasformazione che avviene nel processo.
 
 **Mia nipote, adesso, prende i suoi appunti. Io farò domande, proporrò connessioni, discuterò con lei. Il tè con i biscotti è rimasto. Il Medioevo diventerà suo.**
-
----
-
-**Serie "CodeIntel System: Dal Concetto al Codice"**
-- Post 1: [La Visione del Progetto](/Journey/posts/01-la-visione-del-progetto/)
-- Post 2: [SDLC e Metodologia Agile](/Journey/posts/02-sdlc-e-metodologia-agile/)
-- Post 3: [Analisi, Progettazione e Architettura](/Journey/posts/03-analisi-progettazione-architettura/)
-- Post 4: [L'IA come Co-Sviluppatore](/Journey/posts/04-ia-come-co-sviluppatore/)
-- Post 5: [AST, Tree-sitter e Parsing del Codice](/Journey/posts/05-ast-treesitter-parsing/)
-- Post 6: [CI/CD e Quality Gates](/Journey/posts/06-cicd-quality-gates/)
-- Post 7: [Agent Framework e Orchestrazione](/Journey/posts/07-agent-framework-orchestration/)
-- Post 8: [Documentazione come Filosofia](/Journey/posts/08-documentazione-come-filosofia/)
-- Post 9: [Imparare dai Giganti: Analogie Interdisciplinari](/Journey/posts/09-analogie-interdisciplinari/)
-- Post 10: [Lo Stack dell'Intelligenza Artificiale Applicata](/Journey/posts/10-stack-intelligenza-artificiale/)
-- Post 11: [L'Evoluzione della Qualità RAG](/Journey/posts/11-rag-quality-evolution/)
-- Post 12: [Non Puoi Delegare Ciò Che Non Sai Fare](/Journey/posts/12-refactoring-consapevolezza/)
-- **Post 13**: Non Mandare un Robot in Palestra ← *Sei qui*
