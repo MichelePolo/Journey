@@ -11,6 +11,12 @@ module.exports = function (eleventyConfig) {
     return tags.filter(t => !SYSTEM_TAGS.includes(t));
   });
 
+  // Filtro per recuperare un post da una collection tramite il suo fileSlug
+  eleventyConfig.addFilter("findBySlug", (collection, slug) => {
+    if (!collection) return null;
+    return collection.find(item => item.fileSlug === slug) || null;
+  });
+
   // Filtro per assegnare un colore CSS a ogni tag
   eleventyConfig.addFilter("tagColor", (tag) => {
     const palette = {
