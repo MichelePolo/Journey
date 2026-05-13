@@ -17,7 +17,6 @@ Quel giorno alla lotteria della fiera di paese c'è un gioco simpatico, che spes
 Galton vuole dimostrare una tesi: *"la massa ignorante non sa nulla, solo pochi esperti producono giudizi sensati"*.
 
 Raccoglie tutti i biglietti, calcola la stima collettiva. Risultato: **1.197 libbre**. Peso reale del bue: **1.198 libbre**.
-
 Una libbra di errore, 450 grammi su 543 chili. **Nessun singolo allevatore o macellaio esperto si era avvicinato così tanto.**
 
 Galton, da scienziato onesto quale era nonostante tutto, pubblicò il risultato l'anno seguente su *Nature*. Titolo dell'articolo: ***Vox Populi***.
@@ -43,7 +42,7 @@ Quando un LLM viene addestrato succede qualcosa di sorprendentemente simile al c
 
 Il modello legge miliardi di documenti — libri, articoli scientifici, manuali, post di Stack Overflow, ricette, dispense universitarie, dissertazioni di filosofia, blog. Centinaia di milioni di autori umani, ognuno con la propria piccola stima su qualunque argomento.
 
-Ognuno ha torto in modo personale. Il filosofo del XIX secolo sbaglia in una direzione, l'adolescente su Reddit sbaglia in un'altra. Il giornalista scientifico, il romanziere, il manualista — ognuno produce una distribuzione di probabilità imperfetta sul linguaggio e di conseguenza sul mondo.
+Ognuno ha torto in modo personale. Il filosofo del XIX secolo sbaglia in una direzione, l'adolescente su Reddit sbaglia in un'altra. Il giornalista scientifico, il romanziere, il blogger — ognuno produce una distribuzione di probabilità imperfetta sul linguaggio e di conseguenza sul mondo.
 
 L'addestramento è il meccanismo di **aggregazione**. Miliardi di gradienti che spingono i pesi della rete nella direzione del consenso statistico. Non un consenso votato, non un consenso esplicito: un consenso *emergente* dalla media pesata di tutte le stime umane sul linguaggio.
 
@@ -99,4 +98,4 @@ Un LLM è la versione tecnologica di quella stessa scommessa. Una scommessa che 
 
 Il bue di Plymouth pesava 1.198 libbre e l'umanità, mediata, lo sapeva.
 
-La citazione famosa di Voltaire invece: "Non sono d'accordo con quello che dici, ma difenderò fino alla morte il tuo diritto a manifestare la tua opinione" non era affatto di Voltaire.
+La citazione famosa di Voltaire invece: "Non sono d'accordo con quello che dici, ma difenderò fino alla morte il tuo diritto a manifestare la tua opinione" è molto bella, ma non è affatto di Voltaire.
