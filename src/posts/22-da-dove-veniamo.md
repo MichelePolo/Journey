@@ -41,7 +41,7 @@ Una risposta tecnica ma terribilmente superficiale.
 
 ## La Risposta Scomoda di Guénon
 
-Su consiglio di un amico ho preso in mano *Simboli della Scienza Sacra* di **René Guénon**. Troppo aristocratico, un po' troppo definitivo, troppo poco "moderno" per i miei gusti ma non per questi "non attuale".
+Su consiglio di un amico ho preso in mano *Simboli della Scienza Sacra* di **René Guénon**. Troppo aristocratico, un po' troppo definitivo, troppo poco "moderno" per i miei gusti ma non per questo "non attuale".
 
 Leggerlo ora che passo le giornate a istruire macchine, ha un sapore veramente tanto amaro.
 
