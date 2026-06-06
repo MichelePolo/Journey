@@ -4,3 +4,4 @@ _site/
 HOWTO/
 appunti/
 .superpowers/
+.claude/settings.local.json
