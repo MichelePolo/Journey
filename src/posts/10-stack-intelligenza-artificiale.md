@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-tags: [post]
+tags: [post, ai-pratica]
 title: "Lo Stack dell'Intelligenza Artificiale Applicata"
 subtitle: "Embeddings, Vector Database, RAG e LLM: l'architettura che alimenta l'IA moderna"
 date: 2025-01-23
@@ -123,17 +123,3 @@ Lo stack **Embeddings → Ingestion → Vector DB → RAG → Prompting → LLM*
 Queste rappresentazioni numeriche del linguaggio ci permettono di costruire sistemi che rispondono in modo pertinente, che trovano informazioni rilevanti in oceani di dati.
 
 E come ogni buona ingegneria, funziona meglio quando ne capisci i principi, non solo le API.
-
----
-
-**Serie "CodeIntel System: Dal Concetto al Codice"**
-- Post 1: [La Visione del Progetto](/Journey/posts/01-la-visione-del-progetto/)
-- Post 2: [SDLC e Metodologia Agile](/Journey/posts/02-sdlc-e-metodologia-agile/)
-- Post 3: [Analisi, Progettazione e Architettura](/Journey/posts/03-analisi-progettazione-architettura/)
-- Post 4: [L'IA come Co-Sviluppatore](/Journey/posts/04-ia-come-co-sviluppatore/)
-- Post 5: [AST, Tree-sitter e Parsing del Codice](/Journey/posts/05-ast-treesitter-parsing/)
-- Post 6: [CI/CD e Quality Gates](/Journey/posts/06-cicd-quality-gates/)
-- Post 7: [Agent Framework e Orchestrazione](/Journey/posts/07-agent-framework-orchestration/)
-- Post 8: [Documentazione come Filosofia](/Journey/posts/08-documentazione-come-filosofia/)
-- Post 9: [Imparare dai Giganti: Analogie Interdisciplinari](/Journey/posts/09-analogie-interdisciplinari/)
-- **Post 10**: Lo Stack dell'Intelligenza Artificiale Applicata ← *Sei qui*

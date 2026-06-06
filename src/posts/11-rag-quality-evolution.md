@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-tags: [post]
+tags: [post, ai-pratica]
 title: "L'Evoluzione della Qualità RAG: Documenti vs Codice Sorgente"
 subtitle: "Come l'ingestion del codice richiede strategie diverse dai documenti tradizionali"
 date: 2025-01-31
@@ -312,19 +312,3 @@ L'ingestion del codice sorgente aveva un problema specifico: il rumore sintattic
 Non ho costruito il sistema RAG perfetto. Ho costruito un sistema RAG che **funziona** e che ha spazio per migliorare. E siccome scrivo i post ex-post, è già migliorato, iterazione dopo iterazione.
 
 Perché questo è Agile: non la ricerca della perfezione, ma il **progresso continuo** verso di essa.
-
----
-
-## Serie "CodeIntel System: Dal Concetto al Codice"
-
-- Post 1: [La Visione del Progetto](/Journey/posts/01-la-visione-del-progetto/)
-- Post 2: [SDLC e Metodologia Agile](/Journey/posts/02-sdlc-e-metodologia-agile/)
-- Post 3: [Analisi, Progettazione e Architettura](/Journey/posts/03-analisi-progettazione-architettura/)
-- Post 4: [L'IA come Co-Sviluppatore](/Journey/posts/04-ia-come-co-sviluppatore/)
-- Post 5: [AST, Tree-sitter e Parsing del Codice](/Journey/posts/05-ast-treesitter-parsing/)
-- Post 6: [CI/CD e Quality Gates](/Journey/posts/06-cicd-quality-gates/)
-- Post 7: [Agent Framework e Orchestrazione](/Journey/posts/07-agent-framework-orchestration/)
-- Post 8: [Documentazione come Filosofia](/Journey/posts/08-documentazione-come-filosofia/)
-- Post 9: [Imparare dai Giganti: Analogie Interdisciplinari](/Journey/posts/09-analogie-interdisciplinari/)
-- Post 10: [Lo Stack dell'Intelligenza Artificiale Applicata](/Journey/posts/10-stack-intelligenza-artificiale/)
-- **Post 11**: L'Evoluzione della Qualità RAG ← *Sei qui*

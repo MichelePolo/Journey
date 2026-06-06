@@ -1,0 +1,74 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: collections.tagList
+  size: 1
+  alias: tag
+permalink: "tags/{{ tag }}/"
+eleventyComputed:
+  title: "Tag: {{ tag }}"
+---
+
+<div>
+  <div class="mb-10">
+    <a href="{{ '/blog/' | url }}" class="text-blue-400 hover:text-blue-300 font-mono text-xs flex items-center gap-2 uppercase tracking-widest no-underline transition-colors mb-8 w-fit">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+      All Posts
+    </a>
+    <h1 class="text-5xl md:text-7xl font-serif italic text-white mb-4">Post taggati</h1>
+    <p class="text-lg text-slate-400">
+      {{ collections.postsByTag[tag].length }} articol{{ "o" if collections.postsByTag[tag].length == 1 else "i" }}
+    </p>
+  </div>
+
+  {# Tag Cloud con tag attivo in evidenza #}
+  <div class="mb-14">
+    <p class="text-sm font-mono uppercase tracking-widest text-slate-500 mb-4">Esplora per argomento</p>
+    <div class="flex flex-wrap gap-3">
+      {% for t in collections.tagList %}
+        {% if t == tag %}
+          <a href="{{ ('/tags/' + t + '/') | url }}"
+             class="tag-cloud-pill tag-cloud-pill--active {{ t | tagColor }} no-underline">
+            <span class="tag-cloud-hash" style="opacity:0.7">#</span>{{ t }}
+          </a>
+        {% else %}
+          <a href="{{ ('/tags/' + t + '/') | url }}"
+             class="tag-cloud-pill {{ t | tagColor }} no-underline">
+            <span class="tag-cloud-hash">#</span>{{ t }}
+          </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="flex flex-col">
+    {% for post in collections.postsByTag[tag] | sort(true, false, "date") %}
+      <a href="{{ post.url | url }}" class="scroll-reveal group border-b border-white/5 py-6 cursor-pointer transition-all block no-underline">
+        <div class="flex flex-col md:flex-row md:items-start justify-between gap-6">
+          <div class="flex-1 space-y-3">
+            <div class="text-xs font-mono uppercase tracking-widest text-slate-500">
+              {{ post.date | readableDate }}
+            </div>
+            <h2 class="text-2xl md:text-3xl font-semibold text-white group-hover:text-blue-300 transition-colors duration-300 leading-tight">
+              {{ post.data.title }}
+            </h2>
+            {% if post.data.subtitle %}
+              <p class="text-slate-400 leading-relaxed">{{ post.data.subtitle }}</p>
+            {% endif %}
+            {% set visibleTags = post.data.tags | displayTags %}
+            {% if visibleTags.length > 0 %}
+              <div class="flex flex-wrap gap-2 mt-2">
+                {% for t in visibleTags %}
+                  <span class="tag-badge {{ t | tagColor }}">{{ t }}</span>
+                {% endfor %}
+              </div>
+            {% endif %}
+          </div>
+          <div class="flex items-center group-hover:translate-x-2 transition-transform duration-300">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-slate-600 group-hover:text-blue-400 transition-colors"><path d="m9 18 6-6-6-6"/></svg>
+          </div>
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+</div>

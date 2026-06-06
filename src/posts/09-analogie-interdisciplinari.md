@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-tags: [post]
+tags: [post, ai-filosofia]
 title: "Imparare dai Giganti: Analogie Interdisciplinari nello Sviluppo Software"
 subtitle: "Come architettura, medicina, filosofia e vita quotidiana insegnano a programmare meglio"
 date: 2025-01-17
@@ -218,16 +218,3 @@ E ogni volta che trovo un'analogia che funziona, che rende un concetto astratto 
 Il codice migliore non viene da Stack Overflow o dall'IA.
 
 **Viene da tutto quello che impariamo guardando il mondo.**
-
----
-
-**Serie "CodeIntel System: Dal Concetto al Codice"**
-- Post 1: [La Visione del Progetto](/Journey/posts/01-la-visione-del-progetto/)
-- Post 2: [SDLC e Metodologia Agile](/Journey/posts/02-sdlc-e-metodologia-agile/)
-- Post 3: [Analisi, Progettazione e Architettura](/Journey/posts/03-analisi-progettazione-architettura/)
-- Post 4: [L'IA come Co-Sviluppatore](/Journey/posts/04-ia-come-co-sviluppatore/)
-- Post 5: [AST, Tree-sitter e Parsing del Codice](/Journey/posts/05-ast-treesitter-parsing/)
-- Post 6: [CI/CD e Quality Gates](/Journey/posts/06-cicd-quality-gates/)
-- Post 7: [Agent Framework e Orchestrazione](/Journey/posts/07-agent-framework-orchestration/)
-- Post 8: [Documentazione come Filosofia](/Journey/posts/08-documentazione-come-filosofia/)
-- **Post 9**: Imparare dai Giganti: Analogie Interdisciplinari ← *Sei qui*

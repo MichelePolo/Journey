@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-tags: [post]
+tags: [post, ai-filosofia]
 title: "Non Puoi Delegare Ciò Che Non Sai Fare"
 subtitle: "Riflessioni su refactoring, modernizzazione e il ruolo dell'umano nell'era dell'IA"
 date: 2025-02-08
@@ -135,19 +135,3 @@ Non puoi delegare ciò che non sai fare. Ma puoi usare l'IA per imparare più ve
 Il refactoring non è traduzione. È comprensione profonda seguita da ri-creazione consapevole.
 
 E la consapevolezza? Quella non si delega. Si costruisce. Un commit alla volta.
-
----
-
-**Serie "CodeIntel System: Dal Concetto al Codice"**
-- Post 1: [La Visione del Progetto](/Journey/posts/01-la-visione-del-progetto/)
-- Post 2: [SDLC e Metodologia Agile](/Journey/posts/02-sdlc-e-metodologia-agile/)
-- Post 3: [Analisi, Progettazione e Architettura](/Journey/posts/03-analisi-progettazione-architettura/)
-- Post 4: [L'IA come Co-Sviluppatore](/Journey/posts/04-ia-come-co-sviluppatore/)
-- Post 5: [AST, Tree-sitter e Parsing del Codice](/Journey/posts/05-ast-treesitter-parsing/)
-- Post 6: [CI/CD e Quality Gates](/Journey/posts/06-cicd-quality-gates/)
-- Post 7: [Agent Framework e Orchestrazione](/Journey/posts/07-agent-framework-orchestration/)
-- Post 8: [Documentazione come Filosofia](/Journey/posts/08-documentazione-come-filosofia/)
-- Post 9: [Imparare dai Giganti: Analogie Interdisciplinari](/Journey/posts/09-analogie-interdisciplinari/)
-- Post 10: [Lo Stack dell'Intelligenza Artificiale Applicata](/Journey/posts/10-stack-intelligenza-artificiale/)
-- Post 11: [L'Evoluzione della Qualità RAG](/Journey/posts/11-rag-quality-evolution/)
-- **Post 12**: Non Puoi Delegare Ciò Che Non Sai Fare ← *Sei qui*

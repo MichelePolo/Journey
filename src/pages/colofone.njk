@@ -1,0 +1,62 @@
+---
+layout: layouts/base.njk
+title: Colofone
+permalink: "colofone/"
+---
+
+<div class="max-w-3xl mx-auto">
+  <header class="mb-12">
+    <a href="{{ '/' | url }}" class="text-blue-400 hover:text-blue-300 font-mono text-xs flex items-center gap-2 uppercase tracking-widest no-underline transition-colors mb-8 w-fit">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+      Home
+    </a>
+    <h1 class="font-serif italic text-5xl md:text-6xl leading-tight mb-4 text-white">Colofone</h1>
+    <p class="text-slate-400 text-lg leading-relaxed">Chi scrive, come, con quali strumenti.</p>
+    <div class="h-px bg-white/[0.06] mt-8"></div>
+  </header>
+
+  <div class="article-content">
+
+    <h2>Chi</h2>
+
+    <p>Il blog è scritto da Michele Polo, sviluppatore software a Verona. Le opinioni, le scelte editoriali, le decisioni tecniche e gli errori sono miei.</p>
+
+    <h2>Come</h2>
+
+    <p>Buona parte di questo blog è stata scritta in collaborazione con assistenti basati su Large Language Model — principalmente Claude Code, ma anche Gemini, Copilot e Perplexity in fasi diverse. Considerato che molti post parlano proprio del rapporto fra sviluppatore e IA, mi sembrava coerente — e onesto — dichiararlo apertamente.</p>
+
+    <p>La collaborazione si articola così:</p>
+
+    <ul>
+      <li><strong>Idea, struttura, voce, tesi</strong>: sempre mie. L'IA non decide cosa raccontare, né perché.</li>
+      <li><strong>Prima stesura</strong>: a volte di getto e poi rifiniti, a volte da appunti che trasformo in prosa.</li>
+      <li><strong>Editing</strong>: sempre umano. Tutte le revisioni di stile, i toni, i tagli, sono scelte mie. L'IA fa osservazioni; io accetto, scarto, riscrivo.</li>
+      <li><strong>Revisione</strong>: L'IA fa impaginazione e revisione del testo, corregge gli errori. A volte sbaglio io, a volte sbaglia lei.</li>
+      <li><strong>Citazioni e fonti</strong>: verifico le citazioni e le attribuzioni. Tendenzialmente vengono da Marco Aurelio, da Aristotele, Kant, Popper, Coelho, Rovelli, Galimberti, Sibaldi, il Bushido e tutto ciò che mi piace. Sottolineo le frasi importanti e più significative nei libri che leggo e generalmente finiscono qui o fanno nascere un pensiero mio.</li>
+      <li><strong>Codice</strong>: gli snippet di codice sono semplificati per la lettura. Non sono pensati per essere copia-incollati nell'ide.</li>
+    </ul>
+
+    <p>Per la parte più tecnica — la <a href="{{ '/tags/serie-codeintel/' | url }}">Serie CodeIntel</a> — l'IA è stata particolarmente coinvolta nella stesura. È documentazione di un progetto reale, scritta a posteriori. Le date dei post sono distribuite su domeniche consecutive a partire da novembre 2025, ma la stesura è avvenuta in un arco di tempo più compresso. Claude ha raccolto le metriche di sviluppo.</p>
+
+    <h2>Con quali strumenti</h2>
+
+    <ul>
+      <li><strong>Sito statico</strong>: <a href="https://www.11ty.dev/" target="_blank" rel="noopener">Eleventy</a>, hosting su GitHub Pages.</li>
+      <li><strong>Stile</strong>: <a href="https://tailwindcss.com/" target="_blank" rel="noopener">Tailwind CSS</a> e font Inter / Playfair Display.</li>
+      <li><strong>Scrittura</strong>: Markdown, editor locale, una pipeline di revisione su branch dedicato prima di pubblicare.</li>
+      <li><strong>Collaborazione AI</strong>: principalmente Claude Code, con configurazione locale (skill, hook, <code>CLAUDE.md</code>).</li>
+      <li><strong>Sorgenti</strong>: il repository del blog è pubblico su <a href="https://github.com/MichelePolo/Journey" target="_blank" rel="noopener">GitHub</a>. Trovi tutto, errori inclusi.</li>
+    </ul>
+
+    <h2>Cosa resta al lettore</h2>
+
+    <p>L'IA come collaboratore è il tema centrale di questo blog, dichiararlo è il minimo: il lettore decida quanto approvare e quanto scartare.</p>
+
+    <p>Il valore di un post sta nelle idee che porta, nella precisione con cui sono espresse, nell'onestà con cui sono ammessi i propri limiti. Ciascuno è libero di fare la sua personale ingestion, qui ho solo deciso di esporre la mia. È il principio del <a href="{{ '/posts/13-non-mandare-un-robot-in-palestra/' | url }}">robot in palestra</a>.</p>
+
+    <h2>Contatti</h2>
+
+    <p>Se vuoi segnalare un errore, una citazione sbagliata, un link rotto, o anche solo dirmi che hai apprezzato qualcosa: <a href="mailto:michele.polo@gmail.com">michele.polo@gmail.com</a>.</p>
+
+  </div>
+</div>
