@@ -210,6 +210,7 @@ a.tag-badge:hover { opacity: 1; }
 .tag-ai-filosofia    { color: #c084fc; border-color: rgba(192, 132, 252, 0.35); background: rgba(192, 132, 252, 0.08); }
 .tag-tutorial        { color: #fbbf24; border-color: rgba(251, 191, 36, 0.35); background: rgba(251, 191, 36, 0.08); }
 .tag-personale       { color: #f472b6; border-color: rgba(244, 114, 182, 0.35); background: rgba(244, 114, 182, 0.08); }
+.tag-serie-aether    { color: #2dd4bf; border-color: rgba(45, 212, 191, 0.35); background: rgba(45, 212, 191, 0.08); }
 .tag-default         { color: #94a3b8; border-color: rgba(148, 163, 184, 0.35); background: rgba(148, 163, 184, 0.08); }
 
 /* ─── Tag Cloud Pills ────────────────────────────────────────── */
@@ -249,6 +250,7 @@ a.tag-badge:hover { opacity: 1; }
 .tag-cloud-pill--active.tag-ai-filosofia    { background: #a855f7; }
 .tag-cloud-pill--active.tag-tutorial        { background: #f59e0b; }
 .tag-cloud-pill--active.tag-personale       { background: #ec4899; }
+.tag-cloud-pill--active.tag-serie-aether    { background: #14b8a6; }
 .tag-cloud-pill--active.tag-default         { background: #64748b; }
 
 

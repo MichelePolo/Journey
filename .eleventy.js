@@ -21,6 +21,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("tagColor", (tag) => {
     const palette = {
       "serie-codeintel": "tag-serie-codeintel",
+      "serie-aether":    "tag-serie-aether",
       "ai-pratica":      "tag-ai-pratica",
       "ai-filosofia":    "tag-ai-filosofia",
       "tutorial":        "tag-tutorial",
