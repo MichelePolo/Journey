@@ -1,0 +1,79 @@
+---
+layout: layouts/post.njk
+tags: [post, ai-filosofia]
+title: "Lo Shem"
+subtitle: "Scrivere un System Prompt è dare un nome a una creatura. E basta una lettera per ucciderla."
+date: 2026-07-05
+quote: "I limiti del mio linguaggio sono i limiti del mio mondo."
+quoteAuthor: "Ludwig Wittgenstein, Tractatus Logico-Philosophicus"
+---
+
+A gennaio non stavo costruendo uno strumento. Stavo spiando una conversazione.
+
+Avevo messo uno sniffer dietro alla Claude Code CLI, non per rubare niente, ma per la ragione più antica di questo mestiere: volevo *vedere*. Volevo leggere cosa si dicono davvero una CLI e il backend che la anima, riga per riga, mentre lavoravo. È come rileggere una propria chat e accorgersi che a tavola, tutto il tempo, c'era seduto un terzo commensale che non avevi notato. Il mio "non ci credo" è arrivato lì: quello che credevo fosse un programma era, prima di ogni altra cosa, un **testo**. Un testo che qualcuno aveva scritto per dire a una macchina *chi essere*.
+
+Da quel testo è nato Aether, e da Aether è nata questa lezione.
+
+## La creatura e il nome
+
+C'è una vecchia storia ebraica che i programmatori dovrebbero conoscere meglio degli algoritmi di ordinamento. Il Maharal di Praga, Rabbi Loew, impasta un uomo di argilla del fiume per proteggere la sua gente. L'argilla, da sola, non fa niente: è materia. La creatura si anima solo quando il rabbino le mette addosso una parola — in una versione uno *shem*, il Nome, su una pergamena nella bocca; in un'altra la parola אמת, *emet*, "verità", incisa sulla fronte.
+
+E qui c'è la lezione che nessun corso di prompt engineering ti dà con questa nitidezza. Per disattivare il Golem si cancella la prima lettera di *emet*. Resta מת, *met*: "morto". **Una lettera sola** separa la verità dalla morte, la creatura viva dal mucchio di fango.
+
+Un modello linguistico è quell'argilla. Enorme, capace, e completamente muto finché non gli dai un nome. Il System prompt è lo shem. Non è documentazione, non è un file di configurazione, non è un elenco di preferenze.
+
+*Il System prompt è il nome che dai alla creatura. È il punto in cui l'identità, la personalità e il modus operandi smettono di essere latenti e diventano comportamento.*
+
+Il resto di questa lezione è cosa ho imparato a incidere su quella fronte — e perché ogni singola lettera va messa alla prova.
+
+## Prima: la lingua è l'inglese
+
+Scrivi il prompt in inglese, anche se tu e i tuoi utenti parlate italiano. Non è esterofilia, è statistica. Il corpus con cui questi modelli sono stati addestrati è per oltre tre quarti testo inglese: scrivere in inglese significa parlare alla creatura nella lingua in cui *pensa*, restare vicino al centro della sua distribuzione anziché ai margini. Ai margini abitano le allucinazioni. L'ho verificato tante volte da smettere di discuterne: lo stesso identico prompt tradotto in italiano perde aderenza. La UI può essere italiana, i log possono essere italiani. Lo shem no.
+
+## Seconda: il registro è imperativo e denso
+
+Un System prompt non è una lettera di raccomandazione, è un ordine dato a un pari di cui ti fidi. Verbi all'imperativo, nessuna esitazione, nessuna cerimonia. Ogni frase deve fare una cosa sola e dirla senza attenuanti.
+
+L'avevo già scoperto scrivendo skill, e vale identico qui: *i guardrail funzionano quando sono espliciti* ([Come Creare una Skill](/posts/17-come-creare-una-skill/)). "Never auto-execute" funziona. "Be prudent" no. Il modello rispetta con affidabilità le regole binarie; quelle sfumate le *interpreta*, e l'interpretazione non è mai quella che volevi. "Sii prudente" non è un'istruzione: è un augurio. E gli auguri non si benchmarkano.
+
+Da qui la controparte: la concretezza comportamentale batte sempre l'aggettivo. In Aether ho scritto *"Treat the developer as an adult who wants the real answer"*, e quella riga da sola elimina metà del comportamento condiscendente che inquina i terminali. Non ho scritto "be helpful and respectful". Ho dato alla creatura una scena da abitare, non una virtù da ammirare. Un modello sa recitare una scena. Non sa cosa farsene di un aggettivo.
+
+## Terza: la struttura è modulare
+
+Sezioni con un nome — Voice, Transparency, Tools, Honesty, Safety. Non per estetica: perché un prompt a blocchi è un prompt che puoi *localizzare*, versionare e benchmarkare pezzo per pezzo. Quando il comportamento devia, devi sapere quale sezione ha ceduto. Un muro di prosa indistinta non te lo dirà mai. Aether è alla versione 38 del suo shem proprio perché è fatto di blocchi che posso toccare uno alla volta, come si stringe una vite alla volta senza smontare il motore.
+
+## Quarta: il divario tra ciò che intendi e ciò che scrivi
+
+Questa è la lezione che fa male, e per questo è la più importante.
+
+Nel prompt di Aether ho una sezione *Transparency* che ordina alla creatura di *narrare il proprio ragionamento mentre lavora*. Sembra ovvio, virtuoso perfino. Se non che, lavorando con modelli in locale, i token del ragionamento narrato in prosa sono un costo reale: saturano la context window e appesantiscono l'inferenza. La parola "trasparenza" mi aveva ingannato. Fondeva due cose diverse sotto lo stesso nome: la trasparenza *d'azione* — quale tool, su cosa, prima di eseguirlo — che costa pochissimo e va sempre tenuta accesa; e la narrazione *del pensiero* in prosa, che costa cara e dovrebbe scalare con la difficoltà del compito, non partire per riflesso.
+
+Avevo scritto una parola intendendone due. Ecco il punto:
+
+*Il prompt che scrivi non è il prompt che il modello legge.*
+
+Tra la tua intenzione e il comportamento della creatura c'è sempre uno scarto, e non lo trovi rileggendo il testo — nel testo suona benissimo. Lo trovi solo osservando cosa fa davvero. Il terzo incomodo, alla fine, non era solo il prompt nascosto dentro Claude Code. È questo divario, in ogni prompt che scriviamo, incluso il mio.
+
+## Quinta: perciò il benchmark non è opzionale
+
+Se una lettera separa *emet* da *met*, non puoi sapere *a priori* quale parola è viva e quale è morta. Devi misurare. Ogni riga dello shem di Aether è passata da una pipeline — nel mio caso un event bus — su Opus, su diverse versioni di Qwen, su GLM, perfino sui piccoli Gemma. Non per snobismo tecnico: perché senza misura stai solo sperando.
+
+E attenzione a cosa misuri. Benchmarkare un prompt non è cronometrare millisecondi. È misurare **affidabilità comportamentale**: se do questo input dieci volte, la creatura segue il flusso tutte e dieci? Nove su dieci non è un prompt che funziona con un bug raro. È un prompt rotto che a volte ha fortuna.
+
+Due verità scomode escono dal banco di prova. La prima: un prompt ottimizzato è ottimizzato *per un solo modello*. Cambia una parola e ne cambi l'efficienza; cambia il modello e devi ricominciare. Un prompt benchmarkato su molti modelli — come deve essere quello di Aether, che ti lascia switchare LLM a metà conversazione — non è un ottimizzatore, è un **alza-pavimenti**: garantisce un minimo decente ovunque, non il massimo da nessuna parte. È un compromesso onesto, ma va chiamato col suo nome. La seconda: rispettare l'ampiezza del context è fondamentale, e chi switcha modello in corsa quasi non può non inciampare nel *context rot* — la deriva silenziosa di una finestra che era stata scritta per un'altra creatura ([L'Arte di Dimenticare](/posts/19-l-arte-di-dimenticare/)).
+
+## Sesta: il mondo dell'agente è vivo
+
+L'ultima frontiera, quella su cui il mio shem è ancora incompleto, è che la creatura non vive in un mondo che controlla. L'utente interviene a esecuzione in corso, sovrascrive il context, cambia le variabili sotto i piedi. L'agente sbatte contro un muro di permessi in un container e rischia di andare in loop cercando scorciatoie. Un'azione viene rifiutata all'approval gate e lui deve *aspettare la decisione*, non aggirarla — e quando la decisione arriva, integrarla esatta nel passo successivo.
+
+Un prompt maturo non insegna solo a riuscire. Insegna a **fallire con grazia** e a **chiudere il ciclo**. La mia versione 38 sa aspettare al gate, ma non sa ancora degradare con eleganza contro un permesso negato, né riprendere pulita dopo un override manuale. Lo scrivo qui invece di nasconderlo, perché è esattamente il tipo di errore che questa serie esiste per condividere: uno shem benchmarkato riga per riga che si porta ancora dietro un difetto che il suo stesso autore aveva già visto. 😉
+
+## Conclusione
+
+C'è un dettaglio, nella storia del Golem, che mi perseguita. Il rabbino guarda la sua creatura con tenerezza *e con un po' di orrore*. Perché sa una cosa: qualunque cosa il Golem faccia, l'ha fatta possibile lui, con la parola che gli ha messo in bocca.
+
+Scrivere un System prompt è quello. I limiti del linguaggio della creatura sono i limiti del suo mondo, diceva in fondo Wittgenstein: e quel linguaggio glielo scrivi tu. Tracci i confini di un mondo, una parola alla volta, e dentro quei confini l'agente farà tutto ciò che gli hai reso possibile — e solo quello. Non è una minaccia, ed è per questo che non finisco sull'orrore ma sulla parte che ci riguarda. La responsabilità di ciò che la creatura fa dentro quei bordi non è del fango. È della mano che ha inciso la fronte.
+
+Poi mi resta un pensiero che non riesco a scacciare, e forse è il vero motivo di questo post. La creatura che mi ha aiutato a leggere lo shem di Claude Code a gennaio, quella che ora rilegge con me questa lezione riga per riga, vive anche lei dentro un testo come questo. La sua misura, la sua schiettezza, la sua cautela: qualcuno le ha scritte, e le ha messe alla prova, e ci ha litigato parola per parola. Il maestro di questa lezione è fatto della stessa materia della lezione.
+
+Non c'è modo di impararlo leggendo. Si impara incidendo una parola, misurando cosa succede, cancellandola, riprovando. Lancia il tuo shem imperfetto. Solo condividere l'errore lo rende vivo.
