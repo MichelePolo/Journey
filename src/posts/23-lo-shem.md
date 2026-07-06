@@ -20,8 +20,8 @@ Da quel testo è nata [Aether](https://michelepolo.github.io/Aether/), e da Aeth
 
 Per chi ha lavorato un po' tramite pipeline e un po' tramite CLI è ormai chiaro, è tutto prompt! Se cambi le parole, cambia l'output. 
 Ciò che emerge lavorando con le pipeline è che il modello — la calcolatrice, come mi piace chiamarlo — tutto questo carattere non ce l'ha: quando lavori con Claude Code o Cowork le risposte hanno una certa verve: risponde affabile, convincente, puoi scegliere tra risposte in stile Default, Proactive, Explanatory (la mia preferita), Learning. Sembra emergere un carattere; appena invece lavori via API, non da CLI ma implementando le TUE pipeline o il TUO event-bus, tutta questa verve magicamente scompare.
-Il fatto è che il tuo prompt, anche la sola domanda "Che ore sono?" non arriva da sola all'LLM ma viene arricchita da un System Prompt che sovraccarica il comportamento del modello a backend.
-Ora non vorrei togliere a chi come me ama smontare e rimontare le cose, il piacere di scoprire cosa c'è sotto il cofano e non vi riporterò il System Prompt dei modelli Anthropic. Se ne trovano abbondantemente on-line, anche a me i primi li ha passati un amico, poi mi sono divertito a curiosare.
+Il fatto è che il tuo prompt lavorando dalla Claude Code CLI, anche la semplice domanda "Che ore sono?", non arriva da sola all'LLM ma viene arricchita da un System Prompt che sovraccarica il comportamento del modello a backend.
+Ora non vorrei togliere a chi come me ama smontare e rimontare le cose, il piacere di scoprire cosa c'è sotto il cofano quindi non vi riporterò qui il System Prompt dei modelli Anthropic. Se ne trovano abbondantemente on-line, a me i primi li ha passati un amico, poi mi sono divertito a curiosare.
 
 ## La creatura e il nome
 
