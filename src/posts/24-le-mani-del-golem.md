@@ -110,11 +110,14 @@ Fine del protocollo, letteralmente. La scelta architetturale che vi porto a casa
 
 I tre builtin di Aether implementano tre strategie deliberatamente diverse, ed è il motivo per cui sono un buon materiale di studio:
 
-| Builtin | Strategia | Lezione |
-|---|---|---|
-| **Filesystem** | riusa il pacchetto ufficiale `@modelcontextprotocol/server-filesystem` | quando esiste un server ufficiale maturo, il valore non è reimplementarlo ma *confinarlo*: le root consentite si passano allo spawn, e il server nasce incapace di uscirne |
-| **Terminal** | fatto in casa, un solo tool generico | massima flessibilità, massima superficie d'attacco: ogni chiamata attende l'approvazione |
-| **Git** | fatto in casa, dieci tool specializzati | ogni tool codifica invarianti che una descrizione non può garantire |
+**Filesystem** — riusa il pacchetto ufficiale `@modelcontextprotocol/server-filesystem`.
+La lezione: quando esiste un server ufficiale maturo, il valore non è reimplementarlo ma *confinarlo* — le root consentite si passano allo spawn, e il server nasce incapace di uscirne.
+
+**Terminal** — fatto in casa, un solo tool generico.
+La lezione: massima flessibilità, massima superficie d'attacco — ogni chiamata attende l'approvazione.
+
+**Git** — fatto in casa, dieci tool specializzati.
+La lezione: ogni tool codifica invarianti che una descrizione non può garantire.
 
 Il confronto Terminal↔Git è la lezione di design del software più importante: **un tool generico guadagna flessibilità pagando in superficie d'attacco; N tool specifici guadagnano stabilità**. E gli argomenti vanno trattati come ostili in entrambi i casi — sono testo generato dal modello, ed è da lì che la prompt injection arriva.
 
