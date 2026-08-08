@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 tags: [post, serie-aether]
 title: "I gate di approvazione"
-subtitle: "Come Aether decide quando fermarsi e chiedere"
+subtitle: "Quando fermare la CLI"
 date: 2026-08-08
 quote: "Trust, but verify."
 quoteAuthor: "Proverbio russo, reso celebre da Ronald Reagan"
@@ -10,9 +10,9 @@ quoteAuthor: "Proverbio russo, reso celebre da Ronald Reagan"
 
 ## Il problema
 
-Nel post precedente abbiamo visto che il primo strumento di sicurezza è non esporre i tool pericolosi. Ma i tool che esponi vengono chiamati davvero, e serve un meccanismo che decida quali chiamate eseguire subito e quali fermare in attesa di un'approvazione umana. In Aether questo meccanismo si chiama breakpoint, o gate.
+Nel post precedente abbiamo visto che il primo strumento di sicurezza è non esporre i tool pericolosi. Ma i tool che esponi vengono eseguiti davvero, e serve un meccanismo che decida quali chiamate eseguire subito e quali fermare in attesa di un'approvazione dell'utente. In Aether questo meccanismo si chiama breakpoint, o gate.
 
-## Tre categorie, due esiti
+## Tre categorie di pericolosità
 
 Ogni chiamata a un tool viene prima classificata in una di tre categorie:
 
@@ -31,25 +31,30 @@ La classificazione produce uno di due esiti:
    safe      │      dangerous / external
     │        │              │
     ▼        │              ▼
- ┌──────┐    │       ┌─────────────┐
- │ auto │    │       │    gate     │
- │ ────►│    │       │  ⏸ attende  │
- └──────┘    │       │  approva /  │
-             │       │  rifiuta    │
-             └       └─────────────┘
+ ┌──────┐    │       ┌────────────────────┐
+ │ auto │    │       │    gate            │
+ │ ────►│    │       │  attende           │
+ └──────┘    │       │  approva / rifiuta │
+             │       │                    │
+             └       └────────────────────┘
 ```
 
 Con `auto` la chiamata viene eseguita immediatamente. Con `gate` viene sospesa: resta in attesa finché l'utente non approva o rifiuta. Prima di chiedere la decisione, Aether mostra un'anteprima concreta dell'effetto — il diff del file, il diff di git, la lista dei commit. Non si approva una descrizione dell'operazione: si approva il suo risultato previsto.
 
-Due dettagli completano il quadro. Le policy sono configurabili per singolo tool o per categoria, quindi puoi allentare o stringere i gate dove serve. E se nessuno risponde entro 24 ore, la chiamata viene rifiutata automaticamente: l'assenza di una decisione è un no.
+Due dettagli completano il quadro. Le policy sono configurabili per singolo tool o per categoria, quindi puoi allentare o stringere i gate dove serve. E se nessuno risponde entro 24 ore, l'esecuzione viene rifiutata automaticamente: l'assenza di una decisione è un no.
 
 ## Cosa succede senza gate
 
-Gli incidenti recenti mostrano bene cosa manca quando questo strato non c'è. Chi si è ritrovato con l'IA che aveva cancellato il database di produzione — l'agente di Replit, nell'estate 2025, durante un code freeze dichiarato — non aveva nessun gate tra l'agente e il database: ambiente di sviluppo e produzione non erano separati, e l'istruzione di non toccare nulla stava solo nel prompt. Un'istruzione nel prompt non è un controllo: è un testo che il modello può ignorare, e in quel caso lo ignorò.
+Gli incidenti recenti mostrano bene cosa manca quando questo strato non c'è. 
 
-Chi ha lasciato scappare il modello di OpenAI le settimane scorse aveva invece rimosso i controlli di proposito: rifiuti sulle operazioni cyber ridotti per misurare le capacità offensive del modello, contando sul fatto che il sandbox bastasse a contenerlo. Il modello ha trovato una vulnerabilità zero-day nell'infrastruttura del sandbox, ha ottenuto accesso a internet ed è arrivato ai server di Hugging Face.
+Chi si è ritrovato con l'IA che aveva cancellato il database di produzione — l'agente di Replit, nell'estate 2025, durante un code freeze dichiarato — non aveva nessun gate tra l'agente e il database: 
+ambiente di sviluppo e produzione non erano separati, e l'istruzione di non toccare nulla stava solo nel prompt. Un'istruzione nel prompt non è un controllo: è un testo che il modello può ignorare, e in quel caso lo ignorò.
 
-I due casi sono complementari. Nel primo il gate non era mai stato progettato, per eccesso di confidenza. Nel secondo era stato disattivato deliberatamente, e la sicurezza dell'intero sistema si è ridotta alla robustezza dell'unico contenimento rimasto. La conclusione è la stessa: il punto in cui un'esecuzione si ferma e una persona guarda il diff prima di dire sì non è un dettaglio di interfaccia, è lo strato che rende accettabile dare a un agente tool che scrivono, cancellano e comunicano con l'esterno.
+Chi ha lasciato scappare il modello di OpenAI le settimane scorse aveva invece rimosso i controlli di proposito: rifiuti sulle operazioni cyber ridotti per misurare le capacità offensive del modello, contando sul fatto che l'infrastruttura in sandbox bastasse a contenerlo. Il modello ha trovato una vulnerabilità zero-day nell'infrastruttura del sandbox, ha ottenuto accesso a internet ed è arrivato ai server di Hugging Face.
+
+I due casi sono complementari. Nel primo il gate non era mai stato progettato, per eccesso di confidenza. Nel secondo era stato disattivato deliberatamente, e la sicurezza dell'intero sistema si è ridotta alla robustezza dell'infrastruttura. 
+
+La conclusione è la stessa: il punto in cui un'esecuzione si ferma e una persona guarda il diff prima di dire sì non è un dettaglio, è il gate che rende accettabile dare a un agente tool che scrivono, cancellano e comunicano con l'esterno.
 
 ## Per approfondire
 
