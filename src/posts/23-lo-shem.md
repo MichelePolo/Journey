@@ -115,7 +115,7 @@ Scrivi il prompt in inglese, anche se tu e i tuoi utenti parlate italiano. Non �
 
 Un System prompt non è una lettera di raccomandazione, è un ordine. Verbi all'imperativo, nessuna esitazione, nessuna cerimonia. Ogni frase deve fare una cosa sola e dirla senza attenuanti.
 
-L'avevo già scoperto scrivendo skill, e vale identico qui: *i guardrail funzionano quando sono espliciti* ([Come Creare una Skill](/posts/17-come-creare-una-skill/)). "Never auto-execute" funziona. "Be prudent" no. Il modello rispetta con affidabilità le regole binarie; quelle sfumate le *interpreta*, e l'interpretazione non è mai quella che volevi. "Sii prudente" non è un'istruzione: è un augurio. E gli auguri non si benchmarkano.
+L'avevo già scoperto scrivendo skill, e vale identico qui: *i guardrail funzionano quando sono espliciti* ([Come Creare una Skill](/Journey/posts/17-come-creare-una-skill/)). "Never auto-execute" funziona. "Be prudent" no. Il modello rispetta con affidabilità le regole binarie; quelle sfumate le *interpreta*, e l'interpretazione non è mai quella che volevi. "Sii prudente" non è un'istruzione: è un augurio. E gli auguri non si benchmarkano.
 
 Da qui la controparte: la concretezza comportamentale batte sempre l'aggettivo. In Aether ho scritto "Treat the developer as an adult who wants the real answer", e quella riga da sola elimina metà del comportamento condiscendente che inquina i terminali. Non ho scritto "be helpful and respectful". Ho dato alla calcolatrice un ordine, non sa cosa farsene di un aggettivo.
 
