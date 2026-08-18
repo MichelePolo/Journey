@@ -74,9 +74,11 @@ Questo è esattamente il rischio della rivoluzione che stiamo attraversando ades
 
 Ma un moltiplicatore ha una proprietà che tendiamo a dimenticare quando ci entusiasma: **applicato a zero comprensione, restituisce zero**.
 
-È la domanda che mi porto dietro da mesi. Con un potere del genere, perché stiamo ancora scrivendo gestionali e ritoccando fotografie invece di affrontare i problemi veri? La risposta onesta non è che manchi l'ambizione, è che il moltiplicatore si applica solo a ciò che abbiamo già capito, e la comprensione arriva in ritardo — mentre la capacità di agire con l'uso degli harness è arrivata quasi istantanea. Ora che abbiamo il superpotere: **cosa ne vogliamo fare?**
+È la domanda che mi porto dietro da mesi. Con un potere del genere, perché stiamo ancora scrivendo gestionali e ritoccando fotografie invece di affrontare i problemi veri? La risposta onesta non è che manchi l'ambizione, è che il moltiplicatore si applica solo a ciò che abbiamo già capito, e la comprensione arriva in ritardo — mentre la capacità di agire con l'uso degli harness è arrivata quasi istantanea. 
 
 Per la prima volta nella storia del nostro mestiere, il divario fra ciò che possiamo fare e ciò di cui abbiamo competenza non si misura più in anni di studio e esperienza, si misura in secondi. Dobbiamo essere questa volta attenti a produrre valore e a non sprecare il tempo in sciocchezze inutili. 
+
+Ora che abbiamo un superpotere: **Cosa vogliamo fare per fare la differenza?**
 
 ***
 
